@@ -3,19 +3,13 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
 
-// const artistAPI = 'http://localhost:3000/artists'
-// const artworkAPI = 'http://localhost:3000/artwork'
+const artworkAPI = 'http://localhost:3000/artwork'
 
 function HomePage() {
     const [page, setPage] = useState("/");
-    const [artistData, setArtistData] = useState({})
     const history = useHistory();
 
-    // useEffect(() => {
-    //     fetch(artistAPI)
-    //     .then(res => res.json())
-    //     .then(setArtistData)
-    // }, [])
+   
   
     function handleChangePage(path) {
       setPage(path);
@@ -28,7 +22,7 @@ function HomePage() {
         <Buttons onChangePage={handleChangePage} />
         <Switch>
           <Route exact path="/artist-collection">
-            <ArtistCollection artistData={artistData} />
+            <ArtistCollection />
           </Route>
         </Switch>
       </div>

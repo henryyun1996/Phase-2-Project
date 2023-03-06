@@ -7,7 +7,7 @@ import OwnWork from "./OwnWork";
 
 function App() {
   return (
-   <div className="container">
+   <div className="App ui">
     <Switch>
       <Route exact path="/" component={LogIn}/>
       <Route exact path="/home" component={HomePage}/>

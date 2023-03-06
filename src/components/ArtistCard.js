@@ -1,11 +1,13 @@
+import React from "react";
 
-
-export default function ArtistCard({ artist }) {
+function ArtistCard({ artist }) {
     return (
-       <div className="ui four wide column image">
+       <div className="ui four wide column">
         <h4>{artist.name}</h4>
         <h4>{artist.bio}</h4>
-        <h2>testingg</h2>
+        <button className="ui button"> View Creations</button>
        </div>
     )
 }
+
+export default ArtistCard
