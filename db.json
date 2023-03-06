@@ -1,0 +1,26 @@
+{
+    "artists": [
+      { 
+        "id": 1, 
+        "name": "henry",
+        "bio": "about me etc etc", 
+        "artist_work": "artwork" }, 
+        { 
+        "id": 2, 
+        "name": "gaby",
+        "bio": "about me etc etc", 
+        "artist_work": "artwork" }
+    ],
+    "artwork": [
+      { 
+        "id": 1, 
+        "title": "title", 
+        "image": "https://picsum.photos/200?grayscale",
+        "author": "henry" }, 
+        { 
+            "id": 2, 
+            "title": "untitled", 
+            "image": "https://picsum.photos/200?grayscale",
+            "author": "gaby" }
+    ]
+  }
