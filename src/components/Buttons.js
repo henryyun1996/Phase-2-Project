@@ -2,16 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Buttons({ onChangePage }) {
+    function handleArtistCollectionClick(e) {
+        onChangePage("/artist-collection");
+    }
 
-    // function handleLinkClick(e) {
-    //     e.preventDefault()
-    //     onChangePage(e.target.pathname)
-    // }
+    function handleOwnWorkClick(e) {
+        onChangePage("/creations");
+    }
 
     return (
         <div>
-            <Link class="ui button" to="/artist-collection">Artist Collection Component</Link>
-            <Link class="ui button" to="/creations">Own Work Component</Link>
+            <button class="ui button" onClick={handleArtistCollectionClick}>Artist Collection Component</button>
+            <button class="ui button" onClick={handleOwnWorkClick}>Own Work Component</button>
         </div>
     );
 }

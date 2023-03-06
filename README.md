@@ -20,3 +20,10 @@ Code provided by: Gaby Galvan and Henry Yun
 ![3](https://user-images.githubusercontent.com/115592791/222836445-6c0bda5a-045b-446b-acbe-7b63f76ce99b.jpg)
 ![4](https://user-images.githubusercontent.com/115592791/222836452-e032a10d-ea5d-4707-bfa1-ead7a496cec2.jpg)
 ![5](https://user-images.githubusercontent.com/115592791/222836457-6035102a-62da-4343-8c81-0a56e77e3477.jpg)
+
+
+### User Stories:
+- As a user, I can create a profile or log in
+- Once logged in, I can view my personal art collection, or browse other artist's
+- When I view my own collection: I can add/delete new artwork, see their upvotes, and edit my profile, view my favorites list
+- When I view the artist collections: I can select an artist, view/like their artwork, add items to my favorites list, and follow them
