@@ -9,6 +9,16 @@
         "id": 2, 
         "name": "gaby",
         "bio": "about me etc etc", 
+        "artist_work": "artwork" }, 
+        { 
+        "id": 3, 
+        "name": "vince",
+        "bio": "about me etc etc", 
+        "artist_work": "artwork" }, 
+        { 
+        "id": 4, 
+        "name": "leo",
+        "bio": "about me etc etc", 
         "artist_work": "artwork" }
     ],
     "artwork": [
@@ -18,9 +28,19 @@
         "image": "https://picsum.photos/200?grayscale",
         "author": "henry" }, 
         { 
-            "id": 2, 
-            "title": "untitled", 
-            "image": "https://picsum.photos/200?grayscale",
-            "author": "gaby" }
-    ]
+        "id": 2, 
+        "title": "untitled", 
+        "image": "https://picsum.photos/200?grayscale",
+        "author": "gaby" }, 
+        { 
+        "id": 3, 
+        "title": "yellow", 
+        "image": "https://picsum.photos/200?grayscale",
+        "author": "vince" }, 
+        { 
+        "id": 4, 
+        "title": "ML", 
+        "image": "https://picsum.photos/200?grayscale",
+        "author": "leo" }
+]
   }
