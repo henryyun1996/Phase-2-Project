@@ -1,26 +1,26 @@
 import React, { useState } from "react";
-import { Switch, Route } from "react-router-dom";
-import ArtistCollection from "./ArtistCollection";
-import OwnWork from "./OwnWork";
+import { Switch, Route, useHistory } from "react-router-dom";
 import Buttons from "./Buttons";
+import ArtistCollection from "./ArtistCollection";
 
 function HomePage() {
-    const [page, setPage] = useState("/home")
-
+    const [page, setPage] = useState("/");
+    const history = useHistory();
+  
+    function handleChangePage(path) {
+      setPage(path);
+      history.push(path);
+    }
+  
     return (
-        <div>
-            <h1>Hello ...</h1>
-            <Buttons onChangePage={setPage} />
-            <Switch>
-                <Route path="artist-collection">
-                    <ArtistCollection />
-                </Route>
-                <Route path="creations">
-                    <OwnWork />
-                </Route>
-            </Switch>
-        </div>
-    )
-}
-
-export default HomePage;
+      <div>
+        <h1>Hello ...</h1>
+        <Buttons onChangePage={handleChangePage} />
+        <Switch>
+          <Route exact path="/artist-collection" component={ArtistCollection} />
+        </Switch>
+      </div>
+    );
+  }
+  
+  export default HomePage;

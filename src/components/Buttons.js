@@ -1,15 +1,18 @@
 import React from "react";
 
 function Buttons({ onChangePage }) {
-    function handleLinkClick(e) {
-        e.preventDefault()
-        onChangePage(e.target.pathname)
+    function handleArtistCollectionClick(e) {
+        onChangePage("/artist-collection");
+    }
+
+    function handleOwnWorkClick(e) {
+        onChangePage("/creations");
     }
 
     return (
         <div>
-            <button onClick={handleLinkClick} href="/artist-collection">Artist Collection Component</button>
-            <button onClick={handleLinkClick} href="/creations">Own Work Component</button>
+            <button onClick={handleArtistCollectionClick}>Artist Collection Component</button>
+            <button onClick={handleOwnWorkClick}>Own Work Component</button>
         </div>
     );
 }
