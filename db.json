@@ -3,11 +3,15 @@
       { 
         "id": 1, 
         "name": "henry",
+        "username": "henry",
+        "password": "password",
         "bio": "about me etc etc", 
         "artist_work": "artwork" }, 
         { 
         "id": 2, 
         "name": "gaby",
+        "username": "gaby",
+        "password": "1234",
         "bio": "about me etc etc", 
         "artist_work": "artwork" }, 
         { 

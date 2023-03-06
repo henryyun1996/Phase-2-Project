@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ArtistCard from "./ArtistCard";
 
-const artistAPI = 'http://localhost:3000/artists'
-function ArtistCollection() {
-    const [artistData, setArtistData] = useState([])
+function ArtistCollection({ artists, setArtists }) {
 
-    useEffect(() => {
-        fetch(artistAPI)
-        .then(res => res.json())
-        .then(setArtistData)
-    }, [])
-
-    const artistCards =  artistData.map(artist => {
+    const artistCards =  artists.map(artist => {
        return <ArtistCard artist={artist} key={artist.id}/>
     })
     return (
