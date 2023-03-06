@@ -8,8 +8,8 @@ function Buttons({ onChangePage }) {
 
     return (
         <div>
-            <button onClick={handleLinkClick} href="/artist-collection">Artist Collection Component</button>
-            <button onClick={handleLinkClick} href="/creations">Own Work Component</button>
+            <button class="ui button" onClick={handleLinkClick} href="/artist-collection">Artist Collection Component</button>
+            <button class="ui button" onClick={handleLinkClick} href="/creations">Own Work Component</button>
         </div>
     );
 }
