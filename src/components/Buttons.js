@@ -1,15 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Buttons({ onChangePage }) {
-    function handleLinkClick(e) {
-        e.preventDefault()
-        onChangePage(e.target.pathname)
-    }
+
+    // function handleLinkClick(e) {
+    //     e.preventDefault()
+    //     onChangePage(e.target.pathname)
+    // }
 
     return (
         <div>
-            <button class="ui button" onClick={handleLinkClick} href="/artist-collection">Artist Collection Component</button>
-            <button class="ui button" onClick={handleLinkClick} href="/creations">Own Work Component</button>
+            <Link class="ui button" to="/artist-collection">Artist Collection Component</Link>
+            <Link class="ui button" to="/creations">Own Work Component</Link>
         </div>
     );
 }
