@@ -1,7 +1,10 @@
-import React from "react";
+import {React, useEffect, useState} from "react";
 import ArtistCard from "./ArtistCard";
 
-function ArtistCollection( {setViewCreations}{ artists, setArtists }) {
+
+function ArtistCollection( {setViewCreations, artists, setArtists }) {
+    const [artistData, setArtistData] = useState([])
+    const artistAPI = 'http://localhost:3000/artists'
 
     useEffect(() => {
         fetch(artistAPI)
