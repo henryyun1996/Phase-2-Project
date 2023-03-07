@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 
-function LogIn({ setCurrentUser, artists }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+function LogIn({ setCurrentUser, artists, username, setUsername, password, setPassword }) {
   const history = useHistory();
 
   function handleLogInClick(e) {
@@ -18,6 +16,10 @@ function LogIn({ setCurrentUser, artists }) {
       // Show an error message if the username and password don't match
       alert('Username and password don\'t match - please try again');
     }
+  }
+
+  function handleCreateNewAccountClick() {
+    history.push('/new-account');
   }
 
   return (
@@ -35,6 +37,7 @@ function LogIn({ setCurrentUser, artists }) {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={handleLogInClick}>Log In</button>
+      <button onClick={handleCreateNewAccountClick}>Create New Account</button>
     </div>
   );
 }

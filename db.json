@@ -1,50 +1,62 @@
 {
-    "artists": [
-      { 
-        "id": 1, 
-        "name": "henry",
-        "username": "henry",
-        "password": "password",
-        "bio": "about me etc etc", 
-        "artist_work": "artwork" }, 
-        { 
-        "id": 2, 
-        "name": "gaby",
-        "username": "gaby",
-        "password": "1234",
-        "bio": "about me etc etc", 
-        "artist_work": "artwork" }, 
-        { 
-        "id": 3, 
-        "name": "vince",
-        "bio": "about me etc etc", 
-        "artist_work": "artwork" }, 
-        { 
-        "id": 4, 
-        "name": "leo",
-        "bio": "about me etc etc", 
-        "artist_work": "artwork" }
-    ],
-    "artwork": [
-      { 
-        "id": 1, 
-        "title": "title", 
-        "image": "https://picsum.photos/200?grayscale",
-        "author": "henry" }, 
-        { 
-        "id": 2, 
-        "title": "untitled", 
-        "image": "https://picsum.photos/200?grayscale",
-        "author": "gaby" }, 
-        { 
-        "id": 3, 
-        "title": "yellow", 
-        "image": "https://picsum.photos/200?grayscale",
-        "author": "vince" }, 
-        { 
-        "id": 4, 
-        "title": "ML", 
-        "image": "https://picsum.photos/200?grayscale",
-        "author": "leo" }
-]
-  }
+  "artists": [
+    {
+      "id": 1,
+      "name": "Henry",
+      "username": "henry",
+      "password": "password",
+      "bio": "about me etc etc",
+      "artist_work": "artwork"
+    },
+    {
+      "id": 2,
+      "name": "Gaby",
+      "username": "gaby",
+      "password": "1234",
+      "bio": "about me etc etc",
+      "artist_work": "artwork"
+    },
+    {
+      "id": 3,
+      "name": "Vince",
+      "username": "vince",
+      "password": "vince",
+      "bio": "about me etc etc",
+      "artist_work": "artwork"
+    },
+    {
+      "id": 4,
+      "name": "Leo",
+      "username": "leo",
+      "password": "leo123",
+      "bio": "about me etc etc",
+      "artist_work": "artwork"
+    }
+  ],
+  "artwork": [
+    {
+      "id": 1,
+      "title": "title",
+      "image": "https://picsum.photos/200?grayscale",
+      "author": "henry"
+    },
+    {
+      "id": 2,
+      "title": "untitled",
+      "image": "https://picsum.photos/200?grayscale",
+      "author": "gaby"
+    },
+    {
+      "id": 3,
+      "title": "yellow",
+      "image": "https://picsum.photos/200?grayscale",
+      "author": "vince"
+    },
+    {
+      "id": 4,
+      "title": "ML",
+      "image": "https://picsum.photos/200?grayscale",
+      "author": "leo"
+    }
+  ]
+}
