@@ -3,33 +3,35 @@
     {
       "id": 1,
       "name": "henry",
-        "username": "henry",
-        "password": "password",
+      "username": "henry",
+      "password": "password",
       "bio": "about me etc etc",
       "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
       "artist_work": "artwork"
     },
     {
       "id": 2,
-      "name": "gaby",
-        "username": "gaby",
-        "password": "1234",
+      "name": "Gaby",
+      "username": "gaby",
+      "password": "1234",
       "bio": "about me etc etc",
       "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
       "artist_work": "artwork"
     },
     {
       "id": 3,
-      "name": "vince",
+      "name": "Vince",
+      "username": "vince",
+      "password": "vince",
       "bio": "about me etc etc",
-      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
       "artist_work": "artwork"
     },
     {
       "id": 4,
-      "name": "leo",
+      "name": "Leo",
+      "username": "leo",
+      "password": "leo123",
       "bio": "about me etc etc",
-      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
       "artist_work": "artwork"
     }
   ],

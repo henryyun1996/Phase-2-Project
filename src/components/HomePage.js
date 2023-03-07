@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
 import Gallery from "./Gallery";
 
-function HomePage({ artists }) {
+function HomePage({ currentUser }) {
     const [page, setPage] = useState("/");
     const history = useHistory();
     console.log(page);
@@ -21,7 +21,7 @@ function HomePage({ artists }) {
   
     return (
       <div>
-        <h1>Hello {artists.name}</h1>
+        <h1>Hello {currentUser && currentUser.name}!</h1>
         <Buttons onChangePage={handleChangePage} />
         <Switch>
           <Route exact path="/artist-collection">

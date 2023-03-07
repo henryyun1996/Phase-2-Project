@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import LogIn from "./LogIn";
+import NewAccount from "./NewAccount";
 import HomePage from "./HomePage";
 import ArtistCollection from "./ArtistCollection";
 import OwnWork from "./OwnWork";
@@ -11,6 +12,8 @@ import Gallery from "./Gallery";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [artists, setArtists] = useState([]);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   useEffect(() => {
     fetch(artistAPI)
@@ -33,16 +36,41 @@ function App() {
    <div className="App ui">
     <Switch>
       <Route exact path="/">
-        <LogIn setCurrentUser={setCurrentUser} artists={artists}/>
+        <LogIn 
+          setCurrentUser={setCurrentUser} 
+          artists={artists} 
+          username={username} 
+          setUsername={setUsername} 
+          password={password} 
+          setPassword={setPassword} 
+        />
+      </Route>
+      <Route exact path="/new-account">
+        <NewAccount 
+          username={username} 
+          setUsername={setUsername} 
+          password={password} 
+          setPassword={setPassword} 
+          API={artistAPI}
+          artists={artists}
+          setArtists={setArtists}
+        />
       </Route>
       <Route exact path="/home">
-        <HomePage currentUser={currentUser} artists={artists} />
+        <HomePage 
+          currentUser={currentUser} 
+        />
       </Route>
       <Route exact path="/artist-collection">
-        <ArtistCollection currentUser={currentUser} artists={artists}/>
+        <ArtistCollection 
+          currentUser={currentUser} 
+          artists={artists}
+        />
       </Route>
       <Route exact path="/creations">
-        <OwnWork currentUser={currentUser} />
+        <OwnWork 
+        currentUser={currentUser} 
+      />
       </Route>
       <Route exact path="/gallery" component={Gallery}/>
       <Route path="*">
