@@ -30,7 +30,6 @@ const [searchVal, setSearchVal] = useState('')
         setGalleryData(searchGallery)    
     }
 
-    console.log(galleryData)
 
     return (
         <>
