@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Image } from "semantic-ui-react";
 
 function ArtistCard({ artist, onChangePage }) {
 
-function artistCardClick(e) {
-e.preventDefault();
-console.log(`/${artist.name}`)
+const handleViewClick =() => {
+onChangePage(`/${artist.name}`)
+}
 
-
-
+const [following ,setFollowing] = useState(true)
+const toggleFollow = () => {
+    setFollowing(!following);
 }
     return (
-        <Card className="ui four wide column">
+        <Card className="ui four wide relaxed column">
         <Image src={artist.image} wrapped ui={false} />
         <Card.Content>
           <Card.Header>
@@ -22,10 +23,12 @@ console.log(`/${artist.name}`)
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <button onClick={artistCardClick} className={'ui button'}>
+          {following ? (<button onClick={toggleFollow} className={'ui primary button'}>
             Follow
-          </button>
-          <button className={'ui button'}>
+          </button>) : (<button onClick={toggleFollow} className={'ui button'}>
+            Following
+          </button>)}
+          <button className={'ui button'} onClick={handleViewClick}>
             View Creations
           </button>
         </Card.Content>

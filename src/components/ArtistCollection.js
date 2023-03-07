@@ -19,7 +19,7 @@ function ArtistCollection( {onChangePage}) {
         <div>
         <h1 className="ui block header">Artist Component</h1>
         </div>
-        <div className="ui grid container">
+        <div className="ui relaxed grid container">
         {artistCards}
         </div>
         </>
