@@ -1,18 +1,23 @@
 import React from "react";
 import ArtistCard from "./ArtistCard";
 
-function ArtistCollection({ artists, setArtists }) {
+function ArtistCollection( {setViewCreations}{ artists, setArtists }) {
 
-    const artistCards =  artists.map(artist => {
-       return <ArtistCard artist={artist} key={artist.id}/>
+    useEffect(() => {
+        fetch(artistAPI)
+        .then(res => res.json())
+        .then(setArtistData)
+    }, [])
+
+    const artistCards =  artistData.map(artist => {
+       return <ArtistCard artist={artist} key={artist.id} setViewCreations={setViewCreations}/>
     })
     return (
         <>
         <div>
-        <h1>Artist Component</h1>
+        <h1 className="ui block header">Artist Component</h1>
         </div>
-        <br/>
-        <div className="ui grid container ">
+        <div className="ui grid ">
         {artistCards}
         </div>
         </>
