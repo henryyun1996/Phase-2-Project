@@ -2,10 +2,11 @@
   "artists": [
     {
       "id": 1,
-      "name": "Henry",
+      "name": "henry",
       "username": "henry",
       "password": "password",
       "bio": "about me etc etc",
+      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
       "artist_work": "artwork"
     },
     {
@@ -14,6 +15,7 @@
       "username": "gaby",
       "password": "1234",
       "bio": "about me etc etc",
+      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
       "artist_work": "artwork"
     },
     {
@@ -38,25 +40,29 @@
       "id": 1,
       "title": "title",
       "image": "https://picsum.photos/200?grayscale",
-      "author": "henry"
+      "artist": "henry",
+      "likes": 48
     },
     {
       "id": 2,
       "title": "untitled",
       "image": "https://picsum.photos/200?grayscale",
-      "author": "gaby"
+      "artist": "gaby",
+      "likes": 49
     },
     {
       "id": 3,
       "title": "yellow",
       "image": "https://picsum.photos/200?grayscale",
-      "author": "vince"
+      "artist": "vince",
+      "likes": 92
     },
     {
       "id": 4,
       "title": "ML",
       "image": "https://picsum.photos/200?grayscale",
-      "author": "leo"
+      "artist": "leo",
+      "likes": 35
     }
   ]
 }

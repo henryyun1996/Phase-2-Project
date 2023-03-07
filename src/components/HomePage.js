@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
-
-const artworkAPI = 'http://localhost:3000/artwork'
+import Gallery from "./Gallery";
 
 function HomePage({ currentUser }) {
     const [page, setPage] = useState("/");
@@ -15,6 +14,10 @@ function HomePage({ currentUser }) {
       setPage(path);
       history.push(path);
     }
+
+    function handleViewCreations(path) {
+      console.log("clicked")
+    }
   
     return (
       <div>
@@ -23,6 +26,9 @@ function HomePage({ currentUser }) {
         <Switch>
           <Route exact path="/artist-collection">
             <ArtistCollection />
+          </Route>
+          <Route exact path="/gallery">
+            <Gallery />
           </Route>
         </Switch>
       </div>
