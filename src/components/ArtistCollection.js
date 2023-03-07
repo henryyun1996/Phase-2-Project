@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ArtistCard from "./ArtistCard";
 
 const artistAPI = 'http://localhost:3000/artists'
-function ArtistCollection() {
+function ArtistCollection( {onChangePage}) {
     const [artistData, setArtistData] = useState([])
 
     useEffect(() => {
@@ -12,15 +12,14 @@ function ArtistCollection() {
     }, [])
 
     const artistCards =  artistData.map(artist => {
-       return <ArtistCard artist={artist} key={artist.id}/>
+       return <ArtistCard artist={artist} key={artist.id} onChangePage={onChangePage}/>
     })
     return (
         <>
         <div>
-        <h1>Artist Component</h1>
+        <h1 className="ui block header">Artist Component</h1>
         </div>
-        <br/>
-        <div className="ui grid container ">
+        <div className="ui grid container">
         {artistCards}
         </div>
         </>

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
-
-const artworkAPI = 'http://localhost:3000/artwork'
+import Gallery from "./Gallery";
 
 function HomePage() {
     const [page, setPage] = useState("/");
@@ -22,7 +21,10 @@ function HomePage() {
         <Buttons onChangePage={handleChangePage} />
         <Switch>
           <Route exact path="/artist-collection">
-            <ArtistCollection />
+            <ArtistCollection onChangePage={handleChangePage}/>
+          </Route>
+          <Route exact path="/gallery">
+            <Gallery onChangePage={handleChangePage}/>
           </Route>
         </Switch>
       </div>
