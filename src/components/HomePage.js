@@ -14,6 +14,10 @@ function HomePage() {
       setPage(path);
       history.push(path);
     }
+
+    function handleViewCreations(path) {
+      console.log("clicked")
+    }
   
     return (
       <div>
@@ -21,10 +25,10 @@ function HomePage() {
         <Buttons onChangePage={handleChangePage} />
         <Switch>
           <Route exact path="/artist-collection">
-            <ArtistCollection onChangePage={handleChangePage}/>
+            <ArtistCollection />
           </Route>
           <Route exact path="/gallery">
-            <Gallery onChangePage={handleChangePage}/>
+            <Gallery />
           </Route>
         </Switch>
       </div>
