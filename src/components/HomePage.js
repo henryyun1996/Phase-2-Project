@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Switch, Route, useHistory } from "react-router-dom";
+import { Switch, Route, useHistory, Link } from "react-router-dom";
 import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
 import Gallery from "./Gallery";
@@ -17,6 +17,12 @@ function HomePage({ currentUser }) {
     
     
     return (
+      <>
+       <div className="ui menu">
+        <div className="header item">ArtWalks</div>
+        <Link to= "/" className="item" 
+        setCurrentUser=''>Log Out</Link>
+      </div>
       <div>
         <h1>{currentUser ? (`Hello ${currentUser && currentUser.name}!`) : "Welcome!" }</h1>
         <Buttons onChangePage={handleChangePage} />
@@ -30,6 +36,7 @@ function HomePage({ currentUser }) {
           </Route>
         </Switch> */}
       </div>
+      </>
     );
   }
   

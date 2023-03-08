@@ -1,4 +1,5 @@
 import {React, useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 import ArtistCard from "./ArtistCard";
 
 
@@ -18,6 +19,11 @@ function ArtistCollection( {setViewCreations }) {
 
     return (
         <>
+        <div className="ui menu">
+        <div className="header item">ArtWalks</div>
+        <Link to= "/home" className="item">Home</Link>
+        <Link to= "/" className="item">Log Out</Link>
+        </div>
         <div>
         <h1 className="ui block header">Artist Component</h1>
         </div>

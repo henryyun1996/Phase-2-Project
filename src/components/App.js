@@ -24,14 +24,6 @@ function App() {
 
   return (
   <>
-  <div className="ui menu">
-    <div className="header item">ArtWalks</div>
-    <Link to= "/home" className="item"
-    setCurrentUser={currentUser}>Home</Link>
-    <Link to= "/" className="item" 
-    setCurrentUser=''>Log Out</Link>
-    </div>
-
    <div className="App ui">
     <Switch>
       <Route exact path="/">
