@@ -4,7 +4,7 @@ import { Button } from "semantic-ui-react";
 function Front({ creation }) {
     return (
         <div>
-            <img src={creation.image} alt={creation.title} />
+            <img src={creation.image} alt={creation.title} className="gallery bordered image"/>
         </div>
     )
 }
@@ -70,13 +70,14 @@ const[showFront, setShowFront] = useState( true );
         onClick={handleLike}
         content='Likes'
         icon='heart'
-        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
+        label={{ basic: true, pointing: 'left', content: creation.likes  }}
     /> :  <Button 
         className="ui disabled button"
+        size='tiny'
         color='red'
         content='Thanks!'
         icon='heart'
-        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
+        label={{ basic: true, color: 'red', pointing: 'left', content: creation.likes  }}
     />}
     {creation.favorited === true ? <Button 
     size='tiny'
