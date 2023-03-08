@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Button, Divider, Form, Grid, Segment } from 'semantic-ui-react'
+import banner from "../images/welcome.png"
 
 
 function LogIn({ setCurrentUser, artists, username, setUsername, password, setPassword }) {
@@ -26,7 +27,9 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
   }
 
   return (
-    <Segment placeholder verticalAlign='middle' style={{ height: '100vh' }}>
+    <>
+    <img alt='' src={banner} clasaName= "ui fluid image"/>
+    <Segment placeholder verticalAlign='middle' style={{ height: '50vh' }}>
       <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle' columns={2} relaxed='very' stackable>
         <Grid.Column style={{ maxWidth: 450 }}>
           <Form>
@@ -73,6 +76,7 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
       </Grid>
       <Divider vertical>Or</Divider>
     </Segment>
+    </>
   );
 }
 

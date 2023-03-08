@@ -6,8 +6,7 @@
       "username": "henry",
       "password": "password",
       "bio": "about me etc etc",
-      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "id": 2,
@@ -15,8 +14,7 @@
       "username": "gaby",
       "password": "1234",
       "bio": "about me etc etc",
-      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "id": 3,
@@ -24,7 +22,7 @@
       "username": "vince",
       "password": "vince",
       "bio": "about me etc etc",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "id": 4,
@@ -32,7 +30,7 @@
       "username": "leo",
       "password": "leo123",
       "bio": "about me etc etc",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "name": "Joy",
@@ -97,7 +95,7 @@
       "title": "Family portrait of Jan Miense Molenaer",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/lyester.jpg",
       "artist": "Jan Miense Molenaer",
-      "likes": 35
+      "likes": 36
     },
     {
       "id": 9,
@@ -153,14 +151,14 @@
       "title": "Julie Le Brun Looking in a Mirror",
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/Julie-Le-Brun-by-Elisabeth-Louise-Vige%CC%81e-Le-Brun.jpeg",
       "artist": "Elisabeth Louise Vigée Le Brun",
-      "likes": 35
+      "likes": 36
     },
     {
       "id": 17,
       "title": "The Painter on his Way to Work",
       "image": "https://smhttp-ssl-48028.nexcesscdn.net/pub/media/amasty/amoptmobile/catalog/product/cache/a05b5cb6232e66db94063a0d35d5c493/8/0/80243_ww701_hh761_jpg.webp",
       "artist": "Vincent van Gogh",
-      "likes": 35
+      "likes": 36
     },
     {
       "id": 18,

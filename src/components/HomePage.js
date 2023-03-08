@@ -22,6 +22,8 @@ function HomePage({ currentUser }) {
         <Buttons onChangePage={handleChangePage} />
         <br/>
         <Gallery />
+        {/* do we need the routes here since they already live in app? */}
+        
         {/* <Switch>
           <Route exact path="/artist-collection">
             <ArtistCollection />
