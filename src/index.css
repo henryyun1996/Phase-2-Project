@@ -93,3 +93,20 @@ ul {
   padding: 1%;
   clear: both;
 }
+
+.gallery.bordered.image {
+  border: 8px;
+  border-style: solid;
+  border-color: #ac8c79; 
+  padding: 5px ;
+  margin: 5px ;
+  max-width: 85%
+}
+
+.welcome {
+  background: url(/Users/gabygalvan/Development/code/phase-2/Phase-2-Project/welcome.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

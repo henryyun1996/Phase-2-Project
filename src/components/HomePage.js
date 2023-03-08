@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Switch, Route, useHistory, useParams } from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
 import Gallery from "./Gallery";
-import CreationsByArtist from "./CreationsByArtist";
 
 function HomePage({ currentUser }) {
     const [page, setPage] = useState("/");
@@ -19,19 +18,15 @@ function HomePage({ currentUser }) {
     
     return (
       <div>
-        <h1>Hello {currentUser && currentUser.name}!</h1>
+        <h1>{currentUser ? (`Hello ${currentUser && currentUser.name}!`) : "Welcome!" }</h1>
         <Buttons onChangePage={handleChangePage} />
-        <Switch>
+        <br/>
+        <Gallery />
+        {/* <Switch>
           <Route exact path="/artist-collection">
             <ArtistCollection />
           </Route>
-          <Route exact path="/gallery/">
-            <Gallery />
-          </Route>
-          <Route path="/gallery/:artist">
-            <CreationsByArtist />
-          </Route>
-        </Switch>
+        </Switch> */}
       </div>
     );
   }

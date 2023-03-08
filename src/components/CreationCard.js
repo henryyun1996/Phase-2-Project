@@ -24,8 +24,8 @@ export default function CreationCard({creation, updateLikes}) {
         setLiked(!liked)
     }
     return (
-     <div>
-        <img src={creation.image} alt={creation.title} />
+     <div className="ui five wide column image">
+        <img src={creation.image} alt={creation.title} className='gallery bordered image' />
         <h4>Title: {creation.title}</h4>
         <h4>Artist: {creation.artist}</h4>
      {liked ? <Button 
