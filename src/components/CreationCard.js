@@ -1,8 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "semantic-ui-react";
 
+function Front({ creation }) {
+    return (
+        <div>
+            <img src={creation.image} alt={creation.title} />
+        </div>
+    )
+}
+
+function Back({ creation }) {
+    return (
+        <div>
+            <h4>{creation.summary}</h4>
+        </div>
+    )
+}
+
 export default function CreationCard({creation, updateLikes, updateFavs}) {
-const [liked, setLiked] = useState(true)
+const [liked, setLiked] = useState(true)    
+const[showFront, setShowFront] = useState( true );
+
     function handleLike() {
         fetch ( `http://localhost:3000/artwork/${creation.id}`, {
             method: 'PATCH',
@@ -17,6 +35,10 @@ const [liked, setLiked] = useState(true)
         .then(updateLikes(creation))
         toggleLiked()
     }
+    function toggleCard() {
+        setShowFront(showFront => !showFront)
+    }
+
 
     function handleFav() {
         fetch ( `http://localhost:3000/artwork/${creation.id}`, {
@@ -36,24 +58,25 @@ const [liked, setLiked] = useState(true)
         setLiked(!liked)
     }
     return (
-     <div className="ui five wide column image">
-        <img src={creation.image} alt={creation.title} className='gallery bordered image' />
+    <div className="ui five wide column image">
+        <div onClick={ toggleCard }>
+            {showFront ? <Front creation={creation} /> : <Back creation={creation} />}
+        </div>
         <h4>Title: {creation.title}</h4>
         <h4>Artist: {creation.artist}</h4>
-     {liked ? <Button 
-    className="ui like button"
-    size='tiny'
-    onClick={handleLike}
-    content='Likes'
-    icon='heart'
-    label={{ basic: true, pointing: 'left', content: creation.likes  }}
-    /> :  <Button
-    size='tiny' 
-    className="ui disabled button"
-    color='red'
-    content='Thanks!'
-    icon='heart'
-    label={{ basic: true, pointing: 'left', content: creation.likes  }}
+    {liked ? <Button 
+        className="ui like button"
+        size='tiny'
+        onClick={handleLike}
+        content='Likes'
+        icon='heart'
+        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
+    /> :  <Button 
+        className="ui disabled button"
+        color='red'
+        content='Thanks!'
+        icon='heart'
+        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
     />}
     {creation.favorited === true ? <Button 
     size='tiny'
