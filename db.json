@@ -43,9 +43,10 @@
   "artwork": [
     {
       "id": 1,
-      "title": "Summer Evening vs Nighthawks",
+      "title": "Summer Evening",
       "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq",
       "artist": "Edward Hopper",
+      "summary": "The painting depicts a young couple standing on an old-fashioned white porch at night, bathed in a bright white light. Although the two are clearly meant to be the subject of the work, they are depicted as being relatively small in scale - the surrounding porch, walls and lawn seem to nearly overwhelm them.",
       "likes": 48
     },
     {
@@ -53,13 +54,15 @@
       "title": "Madonna",
       "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55",
       "artist": "Edvard Munch",
-      "likes": 49
+      "summary": "Norwegian expressionist painter Edvard Munch was inspired by what he describes a 'scream throughout nature', depicts a bare-breasted half-length female figure created between 1892 and 1895 using oil paint on canvas.",
+      "likes": 50
     },
     {
       "id": 3,
       "title": "Melancholy",
       "image": "https://www.edvardmunch.org/images/paintings/melancholy.jpg",
       "artist": "Edvard Munch",
+      "summary": "Melancholy (Norwegian: Melankoli, also known as Jappe on the Beach, Jealousy or Evening) depicts a man with his head resting in his hand in a pensive mood at the edge of the shoreline.",
       "likes": 92
     },
     {
@@ -67,6 +70,7 @@
       "title": "The Double",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/jared-french.jpg",
       "artist": "Jared French",
+      "summary": "The narrative of this piece is ambiguous. The central figure is either about to rise from or sink into a shallow grave. He is watched by his double, a rather fussily dressed figure in turtleneck and hat, who kneels with his thighs pressed tightly together and one palm upturned, as though urging his twin to rise.",
       "likes": 35
     },
     {
@@ -74,6 +78,7 @@
       "title": "Circus Performers and Animals",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/margaret-hoening-french.jpg",
       "artist": "Margaret Hoening French",
+      "summary": "This portrayal of a calm scene admidst the chaos that is the circus shows a boy seeming to show two younger girls how to use a aerial hoop.",
       "likes": 35
     },
     {
@@ -81,6 +86,7 @@
       "title": "Stonebreakers",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/53925_1484888367089_1380281183_31296443_2930737_o.jpg",
       "artist": "Giovanni Giacometti",
+      "summary": "This oil painting shows a team of archaelogists studying the remains of an excavated site. A portrayal of what is believed to be a port in Italy - Giovanni accurately captures the ambiance.",
       "likes": 35
     },
     {
@@ -88,20 +94,23 @@
       "title": "Cows on a Stream",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/fritsmondrian.jpg",
       "artist": "Frits Mondriaan",
+      "summary": "Frits Mondriaan was a Dutch painter that loved depicting natural scenes in a semi-distorted way. His preference to paint under a red/yellow sun (either early in the day or late afternoon) shows here - as he paints one of his trademarks - cows!",
       "likes": 35
     },
     {
       "id": 8,
-      "title": "Family portrait of Jan Miense Molenaer",
+      "title": "Family Making Music",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/lyester.jpg",
       "artist": "Jan Miense Molenaer",
-      "likes": 36
+      "summary": "This family portrait depicts many generations of family members, even deceased ancestors. The painting symbolizes not only family unity but music stands the test of time. This can be interpreted because of subtle clock in the dead center at the top where the eldest ancestor would be.",
+      "likes": 35
     },
     {
       "id": 9,
       "title": "Girl with a Pearl Earring",
       "image": "https://cdn.shopify.com/s/files/1/0047/4231/6066/files/Girl_with_a_Pearl_Earring_by_Johannes_Vermeer_1665_800x.jpg",
       "artist": "Johannes Vermeer",
+      "summary": "One of the world's most renowned pieces - This piece symbolizes wealth in a very exagerrated manner. The pearl, not the girl, is the centerpiece and focus of this piece. Vermeer, at the time, could not afford a pearl of this size, and therefore, used glass or tin to give the illusion of the expensive artifact.",
       "likes": 35
     },
     {
@@ -109,6 +118,7 @@
       "title": "The Hunters in the Snow",
       "image": "https://artincontext.org/wp-content/uploads/2021/10/Hunters-in-the-Snow-Bruegel-848x530.jpg",
       "artist": "Pieter Bruegel",
+      "summary": "Bruegel's faith drove a lot of his art pieces. This painting is simply a message that the man himself is a powerless entity, of no consequence, who is at the mercy of the natural seasons and rhythms of the year. The implication is, that only faith in the Creator and the natural (divine) order can bring us meaning and comfort.",
       "likes": 35
     },
     {
@@ -116,6 +126,7 @@
       "title": "The Lane of Poplars",
       "image": "https://www.alfredsisley.org/thumbnail/152000/152478/mini_large/The-Lane-Of-Poplars-At-Moret-Sur-Loing.jpg?ts=1459229076",
       "artist": "Alfred Sisley",
+      "summary": "Many consider this piece an interesting play between positive and negative space. The positive space being the trees and the negative space being the sky, clouds, and houses in the background. The woman resting along the stream almost blends in with the rest of nature and it utilizes a calm and low-contrast color scheme favored by many Impressionists. Interestingly, this painting was stolen 3 times - most recently from the Musée des Beaux-Arts in 2007.",
       "likes": 35
     },
     {
@@ -123,6 +134,7 @@
       "title": "The Lovers",
       "image": "https://www.renemagritte.org/images/paintings/the-lovers-2.jpg",
       "artist": "Rene Magritte",
+      "summary": "Here, a barrier of fabric prevents the intimate embrace between two lovers, transforming an act of passion into one of isolation and frustration. Some have interpreted this work as a depiction of the inability to fully unveil the true nature of even our most intimate companions.",
       "likes": 35
     },
     {
@@ -130,6 +142,7 @@
       "title": "Metamorphosis of Narcissus",
       "image": "https://www.dalipaintings.com/images/paintings/metamorphosis-of-narcissus.jpg",
       "artist": "Salvador Dali",
+      "summary": "This oil-on-canvas painting by Dali depicts his interpretation of the Greek myth of Narcissus. This painting is from the paranoiac-critical period and Dali began painting this in the spring of 1937 while in Zürs, Austria.",
       "likes": 35
     },
     {
@@ -137,6 +150,7 @@
       "title": "Young Mother Sewing",
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/Young-Mother-Sewing-by-Mary-Cassatt.jpeg",
       "artist": "Mary Cassatt",
+      "summary": "Painted in 1900, Cassatt redirected her art toward woman caring for children - and children exclusively in about 1890. These themes could possibly be reflected in her affection for her nieces and nephews.",
       "likes": 35
     },
     {
@@ -144,6 +158,7 @@
       "title": "The Dance Class",
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/DT46-947x1024-1-630x350.jpg",
       "artist": "Edgar Degas",
+      "summary": "This work represents the one of the most ambitious paintings Degas devoted to the theme of dance. Around twenty-four women, ballerinas and their mothers, wait while a dancer executes an 'attitude' for her examination. Famous ballet master, Jules Perror, makes a cameo as a the instructor of the class.",
       "likes": 35
     },
     {
@@ -151,20 +166,23 @@
       "title": "Julie Le Brun Looking in a Mirror",
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/Julie-Le-Brun-by-Elisabeth-Louise-Vige%CC%81e-Le-Brun.jpeg",
       "artist": "Elisabeth Louise Vigée Le Brun",
-      "likes": 36
+      "summary": "Vigée Le Brun adored her daughter, Julie, and painted many pictures of her as she matured. In this piece, she ingeniously portrays the child in both profile and full face - drawing on the bond between them.",
+      "likes": 35
     },
     {
       "id": 17,
       "title": "The Painter on his Way to Work",
       "image": "https://smhttp-ssl-48028.nexcesscdn.net/pub/media/amasty/amoptmobile/catalog/product/cache/a05b5cb6232e66db94063a0d35d5c493/8/0/80243_ww701_hh761_jpg.webp",
       "artist": "Vincent van Gogh",
-      "likes": 36
+      "summary": "This painting is believed to have been destroyed in an air raid on Germany during the Second World War. It is thought to be the first self-portrait that van Gogh painted during his time in Arles.",
+      "likes": 35
     },
     {
       "id": 18,
       "title": "Namida Series no. 0912",
       "image": "https://d1ee3oaj5b5ueh.cloudfront.net/thumbs/680xAUTO_original_article_2021_03_605e0232a2e04.jpeg",
       "artist": "Li Shan Chong",
+      "summary": "Li Shan Chong is a Singaporean artist who explores the fragility of emotion within us all. One of her trademarks is that of a girl crying, as displayed in this piece.",
       "likes": 35
     },
     {
@@ -172,6 +190,7 @@
       "title": "348 West 22nd Street, Apartment A, Unit-2, Corridor and Staircase",
       "image": "https://cdn.thespaces.com/wp-content/uploads/2019/11/348-West-22nd-Street-by-DO-Ho-Suh-EX8708-VW018-hpr-1024x683.jpg",
       "artist": "Do Ho Suh",
+      "summary": "Best known for his intricate sculptures that defy conventional notions of scale and site-specificity, Suh draws attention to the ways viewers occupy and inhabit space. In several of the artist's floor sculptures, viewers are encouraged to walk though and explore the piece from within.",
       "likes": 35
     },
     {
@@ -179,6 +198,7 @@
       "title": "Lucynder",
       "image": "http://munchable.com/wp-content/uploads/2021/01/Mona-Lisa-Nigerian-Model.jpg",
       "artist": "Olawale Ololade",
+      "summary": "Inspired by the Mona Lisa, Ololade got the idea while in class learning about the legendary piece. Excited and with a vision, him and a group of friends shot his friend Lucynder Osunde after much deliberation wtih lighting and makeup.",
       "likes": 35
     }
   ]
