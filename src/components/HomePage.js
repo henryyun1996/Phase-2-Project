@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Switch, Route, useHistory, Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Buttons from "./Buttons";
-import ArtistCollection from "./ArtistCollection";
 import Gallery from "./Gallery";
 
 function HomePage({ currentUser }) {
@@ -13,7 +12,7 @@ function HomePage({ currentUser }) {
       history.push(path);
     }
 
-  
+  console.log(page);
     
     
     return (
@@ -28,13 +27,6 @@ function HomePage({ currentUser }) {
         <Buttons onChangePage={handleChangePage} />
         <br/>
         <Gallery />
-        {/* do we need the routes here since they already live in app? */}
-        
-        {/* <Switch>
-          <Route exact path="/artist-collection">
-            <ArtistCollection />
-          </Route>
-        </Switch> */}
       </div>
       </>
     );
