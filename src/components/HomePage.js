@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Switch, Route, useHistory, useParams } from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
 import Gallery from "./Gallery";
