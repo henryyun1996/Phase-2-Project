@@ -24,8 +24,8 @@ function App() {
 
   return (
   <>
-  <div class="ui menu">
-    <div class="header item">ArtWalks</div>
+  <div className="ui menu">
+    <div className="header item">ArtWalks</div>
     <Link to= "/home" className="item"
     setCurrentUser={currentUser}>Home</Link>
     <Link to= "/" className="item" 
