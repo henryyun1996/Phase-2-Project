@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Button } from "semantic-ui-react";
 
-export default function CreationCard({creation, updateLikes}) {
-
+export default function CreationCard({creation, updateLikes, updateFavs}) {
+const [liked, setLiked] = useState(true)
     function handleLike() {
         fetch ( `http://localhost:3000/artwork/${creation.id}`, {
             method: 'PATCH',
@@ -18,7 +18,19 @@ export default function CreationCard({creation, updateLikes}) {
         toggleLiked()
     }
 
-    const [liked, setLiked] = useState(true)
+    function handleFav() {
+        fetch ( `http://localhost:3000/artwork/${creation.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                favorited: true, 
+            })
+        })
+        .then(res => res.json())
+        .then(updateFavs(creation))
+    }
 
     function toggleLiked() {
         setLiked(!liked)
@@ -43,13 +55,17 @@ export default function CreationCard({creation, updateLikes}) {
     icon='heart'
     label={{ basic: true, pointing: 'left', content: creation.likes  }}
     />}
-    <Button 
+    {creation.favorited === true ? <Button 
     size='tiny'
-    // onClick={handleFav}
+    content='Added to Favorites'
+    icon='favorite'
+    />  : <Button 
+    size='tiny'
+    onClick={handleFav}
     className="ui fav button"
     content='Add to Favorites'
     icon='favorite'
-    />
+    />}
      </div>
 
     )

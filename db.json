@@ -46,14 +46,16 @@
       "title": "Summer Evening vs Nighthawks",
       "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq",
       "artist": "Edward Hopper",
-      "likes": 48
+      "likes": 48,
+      "favorited": true
     },
     {
       "id": 2,
       "title": "Madonna",
       "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55",
       "artist": "Edvard Munch",
-      "likes": 49
+      "likes": 49,
+      "favorited": true
     },
     {
       "id": 3,

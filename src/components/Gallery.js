@@ -17,13 +17,17 @@ const [filteredGalleryData, setFilteredGalleryData] = useState([]);
     }, [])
     
     const creations = filteredGalleryData.map(creation => (
-        <CreationCard creation={creation} key={creation.id} updateLikes={updateLikes} />
+        <CreationCard creation={creation} key={creation.id} updateLikes={updateLikes} updateFavs={updateFavs}/>
       ));
 
     function updateLikes(likedCreation) {
         const updatedCreation = galleryData.map((creation) => 
         creation.id === likedCreation.id ? likedCreation : creation)
         setGalleryData(updatedCreation)
+    }
+
+    function updateFavs() {
+
     }
 
     function handleSearch(searchText) {
