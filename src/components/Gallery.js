@@ -14,7 +14,7 @@ const [filteredGalleryData, setFilteredGalleryData] = useState([]);
             setGalleryData(artPieces);
             setFilteredGalleryData(artPieces);
         })
-    }, [])
+    }, [setGalleryData])
     
     const creations = filteredGalleryData.map(creation => (
         <CreationCard creation={creation} key={creation.id} updateLikes={updateLikes} updateFavs={updateFavs}/>
@@ -26,8 +26,10 @@ const [filteredGalleryData, setFilteredGalleryData] = useState([]);
         setGalleryData(updatedCreation)
     }
 
-    function updateFavs() {
-
+    function updateFavs(favedCreations) {
+        const favedItems = galleryData.map((creation) =>
+        creations.favorited === true ? favedCreations : creation)
+        setGalleryData(favedItems)
     }
 
     function handleSearch(searchText) {

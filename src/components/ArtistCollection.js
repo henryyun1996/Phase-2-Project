@@ -1,9 +1,10 @@
 import {React, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
+import { Grid, Segment } from "semantic-ui-react";
 import ArtistCard from "./ArtistCard";
 
 
-function ArtistCollection( {setViewCreations }) {
+function ArtistCollection() {
     const [artistData, setArtistData] = useState([])
     const artistAPI = 'http://localhost:3000/artists'
 
@@ -14,8 +15,12 @@ function ArtistCollection( {setViewCreations }) {
     }, [])
 
     const artistCards =  artistData.map(artist => {
-       return <ArtistCard artist={artist} key={artist.id} setViewCreations={setViewCreations}/>
+       return <ArtistCard artist={artist} key={artist.id} showFavs={showFavs}/>
     })
+
+    function showFavs() {
+        return <div>helloooo</div>
+    }
 
     return (
         <>
@@ -24,15 +29,17 @@ function ArtistCollection( {setViewCreations }) {
         <Link to= "/home" className="item">Home</Link>
         <Link to= "/" className="item">Log Out</Link>
         </div>
-        <div>
-        <h1 className="ui block header">Artist Component</h1>
-        </div>
-        <br/>
-        <div >
-        {artistCards}
-        </div>
-        <div>
-        </div>
+
+    <Segment>
+    <Grid columns={3}>
+      <Grid.Column>
+       {artistCards}
+      </Grid.Column>
+      <Grid.Column>
+       <h1 className="ui block header">Artist Component</h1>
+      </Grid.Column>
+    </Grid>
+      </Segment>
         </>
     )
 }

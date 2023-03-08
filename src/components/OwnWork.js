@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Divider, Grid, Image, Segment } from "semantic-ui-react";
+import { Divider, Grid, Segment } from "semantic-ui-react";
 
 function OwnWork() {
   const [favorited, setFavorited] = useState([])
@@ -9,29 +9,45 @@ function OwnWork() {
     fetch("http://localhost:3000/artwork")
     .then(res => res.json())
     .then(artwork => filterFavorites(artwork))
-  }, [])
+  }, [handleDelete])
     
   function filterFavorites(artwork) {
     const onlyFavs = artwork.filter((fav) => 
     fav.favorited === true)
     setFavorited(onlyFavs)
   }
-  console.log(favorited)
+
   const favoritesList = favorited.map ((creation) => {
   return (
     <>
-     <div className="center aligned content">
+     <div key={creation.id} className="center aligned content">
         <span className="ui header">Title: {creation.title}</span>
         <br/>
         <span className="header">Artist: {creation.artist}</span>
       </div> 
       <div className="ui medium image">
         <img src={creation.image} alt={creation.title} className="gallery bordered image"/>
-      </div>
-    <button className="ui like button">Remove from favorites</button>
+      </div> 
+    <button className="ui like button" onClick={() =>handleDelete(creation)}>Remove from favorites</button>
     <Divider/></>
   )
   })
+
+  function handleDelete(creation) {
+    fetch(`http://localhost:3000/artwork/${creation.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+        favorited: false,
+        }),
+    })
+    .then((res) => res.json())
+    .then(console.log("deleted"))
+  }
+
+  
 
     return (
     <>

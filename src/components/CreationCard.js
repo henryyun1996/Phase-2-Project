@@ -20,6 +20,7 @@ function Back({ creation }) {
 export default function CreationCard({creation, updateLikes, updateFavs}) {
 const [liked, setLiked] = useState(true)    
 const[showFront, setShowFront] = useState( true );
+const [favorited, setFavorited] = useState(false)
 
     function handleLike() {
         fetch ( `http://localhost:3000/artwork/${creation.id}`, {
@@ -51,9 +52,13 @@ const[showFront, setShowFront] = useState( true );
             })
         })
         .then(res => res.json())
-        .then(updateFavs(creation))
+        .then(toggleFavorite())
     }
 
+    function toggleFavorite() {
+        setFavorited(!favorited)
+    }
+   
     function toggleLiked() {
         setLiked(!liked)
     }
@@ -79,7 +84,7 @@ const[showFront, setShowFront] = useState( true );
         icon='heart'
         label={{ basic: true, color: 'red', pointing: 'left', content: creation.likes  }}
     />}
-    {creation.favorited === true ? <Button 
+    {creation.favorited || favorited === true ? <Button 
     size='tiny'
     content='Added to Favorites'
     icon='favorite'
