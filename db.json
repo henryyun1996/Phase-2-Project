@@ -47,18 +47,10 @@
       "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq",
       "artist": "Edward Hopper",
       "summary": "The painting depicts a young couple standing on an old-fashioned white porch at night, bathed in a bright white light. Although the two are clearly meant to be the subject of the work, they are depicted as being relatively small in scale - the surrounding porch, walls and lawn seem to nearly overwhelm them.",
-      "likes": 48
+      "likes": 49
     },
     {
       "id": 2,
-      "title": "Madonna",
-      "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55",
-      "artist": "Edvard Munch",
-      "summary": "Norwegian expressionist painter Edvard Munch was inspired by what he describes a 'scream throughout nature', depicts a bare-breasted half-length female figure created between 1892 and 1895 using oil paint on canvas.",
-      "likes": 50
-    },
-    {
-      "id": 3,
       "title": "Melancholy",
       "image": "https://www.edvardmunch.org/images/paintings/melancholy.jpg",
       "artist": "Edvard Munch",
@@ -66,7 +58,7 @@
       "likes": 92
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "The Double",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/jared-french.jpg",
       "artist": "Jared French",
@@ -74,15 +66,7 @@
       "likes": 35
     },
     {
-      "id": 5,
-      "title": "Circus Performers and Animals",
-      "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/margaret-hoening-french.jpg",
-      "artist": "Margaret Hoening French",
-      "summary": "This portrayal of a calm scene admidst the chaos that is the circus shows a boy seeming to show two younger girls how to use a aerial hoop.",
-      "likes": 35
-    },
-    {
-      "id": 6,
+      "id": 4,
       "title": "Stonebreakers",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/53925_1484888367089_1380281183_31296443_2930737_o.jpg",
       "artist": "Giovanni Giacometti",
@@ -90,7 +74,7 @@
       "likes": 35
     },
     {
-      "id": 7,
+      "id": 5,
       "title": "Cows on a Stream",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/fritsmondrian.jpg",
       "artist": "Frits Mondriaan",
@@ -98,11 +82,27 @@
       "likes": 35
     },
     {
-      "id": 8,
+      "id": 6,
       "title": "Family Making Music",
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/lyester.jpg",
       "artist": "Jan Miense Molenaer",
       "summary": "This family portrait depicts many generations of family members, even deceased ancestors. The painting symbolizes not only family unity but music stands the test of time. This can be interpreted because of subtle clock in the dead center at the top where the eldest ancestor would be.",
+      "likes": 35
+    },
+    {
+      "id": 7,
+      "title": "Madonna",
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55",
+      "artist": "Edvard Munch",
+      "summary": "Norwegian expressionist painter Edvard Munch was inspired by what he describes a 'scream throughout nature', depicts a bare-breasted half-length female figure created between 1892 and 1895 using oil paint on canvas.",
+      "likes": 50
+    },
+    {
+      "id": 8,
+      "title": "Circus Performers and Animals",
+      "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/margaret-hoening-french.jpg",
+      "artist": "Margaret Hoening French",
+      "summary": "This portrayal of a calm scene admidst the chaos that is the circus shows a boy seeming to show two younger girls how to use a aerial hoop.",
       "likes": 35
     },
     {
@@ -171,14 +171,6 @@
     },
     {
       "id": 17,
-      "title": "The Painter on his Way to Work",
-      "image": "https://smhttp-ssl-48028.nexcesscdn.net/pub/media/amasty/amoptmobile/catalog/product/cache/a05b5cb6232e66db94063a0d35d5c493/8/0/80243_ww701_hh761_jpg.webp",
-      "artist": "Vincent van Gogh",
-      "summary": "This painting is believed to have been destroyed in an air raid on Germany during the Second World War. It is thought to be the first self-portrait that van Gogh painted during his time in Arles.",
-      "likes": 35
-    },
-    {
-      "id": 18,
       "title": "Namida Series no. 0912",
       "image": "https://d1ee3oaj5b5ueh.cloudfront.net/thumbs/680xAUTO_original_article_2021_03_605e0232a2e04.jpeg",
       "artist": "Li Shan Chong",
@@ -186,7 +178,7 @@
       "likes": 35
     },
     {
-      "id": 19,
+      "id": 18,
       "title": "348 West 22nd Street, Apartment A, Unit-2, Corridor and Staircase",
       "image": "https://cdn.thespaces.com/wp-content/uploads/2019/11/348-West-22nd-Street-by-DO-Ho-Suh-EX8708-VW018-hpr-1024x683.jpg",
       "artist": "Do Ho Suh",
@@ -194,11 +186,19 @@
       "likes": 35
     },
     {
+      "id": 19,
+      "title": "The Painter on his Way to Work",
+      "image": "https://smhttp-ssl-48028.nexcesscdn.net/pub/media/amasty/amoptmobile/catalog/product/cache/a05b5cb6232e66db94063a0d35d5c493/8/0/80243_ww701_hh761_jpg.webp",
+      "artist": "Vincent van Gogh",
+      "summary": "This painting is believed to have been destroyed in an air raid on Germany during the Second World War. It is thought to be the first self-portrait that van Gogh painted during his time in Arles.",
+      "likes": 35
+    },
+    {
       "id": 20,
       "title": "Lucynder",
       "image": "http://munchable.com/wp-content/uploads/2021/01/Mona-Lisa-Nigerian-Model.jpg",
       "artist": "Olawale Ololade",
-      "summary": "Inspired by the Mona Lisa, Ololade got the idea while in class learning about the legendary piece. Excited and with a vision, him and a group of friends shot his friend Lucynder Osunde after much deliberation wtih lighting and makeup.",
+      "summary": "Inspired by the Mona Lisa, Ololade got the idea while in class learning about the legendary piece. Excited and with a vision, him and a group of friends shot his friend's portrait, Lucynder Osunde.",
       "likes": 35
     }
   ]
