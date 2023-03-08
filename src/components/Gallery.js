@@ -43,7 +43,7 @@ const [filteredGalleryData, setFilteredGalleryData] = useState([]);
             <div className="ui button">Search</div>
         </div>
         <br/>
-        <div className="ui grid centered">
+        <div className="ui grid container">
         {creations}
         </div>
         </>

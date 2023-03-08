@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Button, Divider, Form, Grid, Segment } from 'semantic-ui-react'
+import banner from "../images/welcome.png"
 
 
 function LogIn({ setCurrentUser, artists, username, setUsername, password, setPassword }) {
@@ -26,9 +27,11 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
   }
 
   return (
-    <Segment placeholder verticalAlign='middle' style={{ height: '100vh' }}>
+    <>
+    <img alt='' src={banner} className= "ui fluid image"/>
+    <Segment placeholder verticalAlign='middle' style={{ height: '50vh' }}>
       <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle' columns={2} relaxed='very' stackable>
-        <Grid.Column style={{ maxWidth: 450 }}>
+        <Grid.Column >
           <Form>
           <h1>Welcome Back!</h1>
           <p>We're excited to see you again</p>
@@ -59,8 +62,8 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
           </div>
           </Form>
         </Grid.Column>
-        <Grid.Column verticalAlign='middle' style={{ backgroundImage: 'url(https://www.bwillcreative.com/wp-content/uploads/2020/05/portrait-orientation-zion-national-park.jpg)', backgroundSize: 'cover', padding: '10rem' }}>
-          <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}>
+        <Grid.Column verticalAlign='middle' >
+          <div >
             <h1>Let's get you started!</h1>
             <p>Signing up takes 1 minute!</p>
             <Button onClick={handleCreateNewAccountClick}>Create New Account</Button>
@@ -73,6 +76,7 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
       </Grid>
       <Divider vertical>Or</Divider>
     </Segment>
+    </>
   );
 }
 

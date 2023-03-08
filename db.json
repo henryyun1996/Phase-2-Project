@@ -6,8 +6,7 @@
       "username": "henry",
       "password": "password",
       "bio": "about me etc etc",
-      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "id": 2,
@@ -15,8 +14,7 @@
       "username": "gaby",
       "password": "1234",
       "bio": "about me etc etc",
-      "image": "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "id": 3,
@@ -24,7 +22,7 @@
       "username": "vince",
       "password": "vince",
       "bio": "about me etc etc",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "id": 4,
@@ -32,7 +30,7 @@
       "username": "leo",
       "password": "leo123",
       "bio": "about me etc etc",
-      "artist_work": "artwork"
+      "favorites": "artwork"
     },
     {
       "name": "Joy",

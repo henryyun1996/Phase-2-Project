@@ -24,15 +24,6 @@ function App() {
 
   return (
   <>
-  <nav className="ui five item menu">
-    
-    <Link to="/" className="item">Log In</Link>
-    <Link to="/home" className="item">Home</Link>
-    <Link to="/artist-collection" className="item">Artists</Link>
-    <Link to="/gallery" className="item">Gallery</Link>
-    <Link to="/creations" className="item">My Profile</Link>
-
-  </nav>
    <div className="App ui">
     <Switch>
       <Route exact path="/">

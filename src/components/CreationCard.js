@@ -45,25 +45,33 @@ export default function CreationCard({creation, updateLikes}) {
         setLiked(!liked)
     }
     return (
-    <div>
+    <div className="ui five wide column image">
         <div onClick={ toggleCard }>
             {showFront ? <Front creation={creation} /> : <Back creation={creation} />}
         </div>
         <h4>Title: {creation.title}</h4>
         <h4>Artist: {creation.artist}</h4>
     {liked ? <Button 
+        className="ui like button"
+        size='tiny'
         onClick={handleLike}
-        color='blue'
         content='Likes'
         icon='heart'
         label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
     /> :  <Button 
         className="ui disabled button"
-        color='blue'
+        color='red'
         content='Thanks!'
         icon='heart'
         label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
     />}
+    <Button 
+        size='tiny'
+        // onClick={handleFav}
+        className="ui fav button"
+        content='Add to Favorites'
+        icon='favorite'
+    />
     </div>
 
     )

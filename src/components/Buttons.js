@@ -11,8 +11,8 @@ function Buttons({ onChangePage }) {
 
     return (
         <div>
-            <button className= "ui button" onClick={handleArtistCollectionClick}>Artist Collection Component</button>
-            <button className= "ui button" onClick={handleOwnWorkClick}>Own Work Component</button>
+            <button className= "ui button" onClick={handleArtistCollectionClick}>Find Friends</button>
+            <button className= "ui button" onClick={handleOwnWorkClick}>My Profile</button>
         </div>
     );
 }
