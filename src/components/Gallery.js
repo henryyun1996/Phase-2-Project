@@ -4,19 +4,21 @@ const galleryAPI = 'http://localhost:3000/artwork'
 
 export default function Gallery () {
 const [galleryData, setGalleryData] = useState([])
-const [searchVal, setSearchVal] = useState('')
+const [filteredGalleryData, setFilteredGalleryData] = useState([]);
 
 
     useEffect(() => {
         fetch(galleryAPI)
         .then(res => res.json())
-        .then(setGalleryData)
+        .then((artPieces) => {
+            setGalleryData(artPieces);
+            setFilteredGalleryData(artPieces);
+        })
     }, [])
     
-    const creations = galleryData
-    .map(creation => {
-        return <CreationCard creation={creation} key={creation.id} updateLikes={updateLikes} />})
-    
+    const creations = filteredGalleryData.map(creation => (
+        <CreationCard creation={creation} key={creation.id} updateLikes={updateLikes} />
+      ));
 
     function updateLikes(likedCreation) {
         const updatedCreation = galleryData.map((creation) => 
@@ -24,13 +26,14 @@ const [searchVal, setSearchVal] = useState('')
         setGalleryData(updatedCreation)
     }
 
-    function handleSearch (searchVal) {
-        setSearchVal(searchVal)
-        const searchGallery = galleryData.filter(creation => creation.title.toLowerCase().includes(searchVal.toLowerCase()))
-        setGalleryData(searchGallery)    
-    }
+    function handleSearch(searchText) {
+        const searchGallery = galleryData.filter((creation) =>
+          creation.title.toLowerCase().includes(searchText.toLowerCase())
+        );
+        setFilteredGalleryData(searchGallery);
+      }
 
-    console.log(galleryData)
+    console.log(filteredGalleryData)
 
     return (
         <>

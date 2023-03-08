@@ -7,8 +7,6 @@ import Gallery from "./Gallery";
 function HomePage({ currentUser }) {
     const [page, setPage] = useState("/");
     const history = useHistory();
-    console.log(page);
-    console.log(artworkAPI);
   
     function handleChangePage(path) {
       setPage(path);

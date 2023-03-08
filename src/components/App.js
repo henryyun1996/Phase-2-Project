@@ -5,9 +5,9 @@ import NewAccount from "./NewAccount";
 import HomePage from "./HomePage";
 import ArtistCollection from "./ArtistCollection";
 import OwnWork from "./OwnWork";
+import Gallery from "./Gallery";
 
 const artistAPI = 'http://localhost:3000/artists';
-import Gallery from "./Gallery";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
