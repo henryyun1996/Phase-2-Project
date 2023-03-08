@@ -4,15 +4,18 @@ import { Grid, Segment } from "semantic-ui-react";
 import ArtistCard from "./ArtistCard";
 
 
-function ArtistCollection() {
+function ArtistCollection( {setViewCreations, currentUser }) {
     const [artistData, setArtistData] = useState([])
     const artistAPI = 'http://localhost:3000/artists'
 
     useEffect(() => {
         fetch(artistAPI)
         .then(res => res.json())
-        .then(setArtistData)
-    }, [])
+        .then((artistProfiles) => {
+            const filteredArtistProfileList = artistProfiles.filter((artist) => artist.id !== currentUser?.id);
+            setArtistData(filteredArtistProfileList)
+        })
+    }, [currentUser]);
 
     const artistCards =  artistData.map(artist => {
        return <ArtistCard artist={artist} key={artist.id} showFavs={showFavs}/>
