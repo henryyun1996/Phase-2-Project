@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import { Switch, Route, useHistory } from "react-router-dom";
+import { Switch, Route, useHistory, useParams } from "react-router-dom";
 import Buttons from "./Buttons";
 import ArtistCollection from "./ArtistCollection";
 import Gallery from "./Gallery";
+import CreationsByArtist from "./CreationsByArtist";
 
 function HomePage({ currentUser }) {
     const [page, setPage] = useState("/");
     const history = useHistory();
-  
+    
     function handleChangePage(path) {
       setPage(path);
       history.push(path);
     }
 
-    function handleViewCreations(path) {
-      console.log("clicked")
-    }
   
+    
+    
     return (
       <div>
         <h1>Hello {currentUser && currentUser.name}!</h1>
@@ -25,8 +25,11 @@ function HomePage({ currentUser }) {
           <Route exact path="/artist-collection">
             <ArtistCollection />
           </Route>
-          <Route exact path="/gallery">
+          <Route exact path="/gallery/">
             <Gallery />
+          </Route>
+          <Route path="/gallery/:artist">
+            <CreationsByArtist />
           </Route>
         </Switch>
       </div>

@@ -72,7 +72,7 @@ function App() {
         currentUser={currentUser} 
       />
       </Route>
-      <Route exact path="/gallery" component={Gallery}/>
+      <Route path="/gallery" component={Gallery}/>
       <Route path="*">
         <h1>404 not found</h1>
       </Route>

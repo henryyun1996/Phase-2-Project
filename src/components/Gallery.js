@@ -33,8 +33,6 @@ const [filteredGalleryData, setFilteredGalleryData] = useState([]);
         setFilteredGalleryData(searchGallery);
       }
 
-    console.log(filteredGalleryData)
-
     return (
         <>
         <div>
