@@ -7,10 +7,8 @@ import CreationsByArtist from "./CreationsByArtist";
 
 function HomePage({ currentUser }) {
     const [page, setPage] = useState("/");
-
     const history = useHistory();
-    console.log(page)
-
+    
     function handleChangePage(path) {
       setPage(path);
       history.push(path);

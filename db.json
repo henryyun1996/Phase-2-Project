@@ -2,7 +2,7 @@
   "artists": [
     {
       "id": 1,
-      "name": "henry",
+      "name": "Henry",
       "username": "henry",
       "password": "password",
       "bio": "about me etc etc",
@@ -33,35 +33,154 @@
       "password": "leo123",
       "bio": "about me etc etc",
       "artist_work": "artwork"
+    },
+    {
+      "name": "Joy",
+      "username": "joiboi",
+      "password": "bori",
+      "bio": "modern/ contemporary",
+      "id": 5
     }
   ],
   "artwork": [
     {
       "id": 1,
-      "title": "title",
-      "image": "https://picsum.photos/200?grayscale",
-      "artist": "henry",
+      "title": "Summer Evening vs Nighthawks",
+      "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq",
+      "artist": "Edward Hopper",
       "likes": 48
     },
     {
       "id": 2,
-      "title": "untitled",
-      "image": "https://picsum.photos/200?grayscale",
-      "artist": "gaby",
+      "title": "Madonna",
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55",
+      "artist": "Edvard Munch",
       "likes": 49
     },
     {
       "id": 3,
-      "title": "yellow",
-      "image": "https://picsum.photos/200?grayscale",
-      "artist": "vince",
+      "title": "Melancholy",
+      "image": "https://www.edvardmunch.org/images/paintings/melancholy.jpg",
+      "artist": "Edvard Munch",
       "likes": 92
     },
     {
       "id": 4,
-      "title": "ML",
-      "image": "https://picsum.photos/200?grayscale",
-      "artist": "leo",
+      "title": "The Double",
+      "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/jared-french.jpg",
+      "artist": "Jared French",
+      "likes": 35
+    },
+    {
+      "id": 5,
+      "title": "Circus Performers and Animals",
+      "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/margaret-hoening-french.jpg",
+      "artist": "Margaret Hoening French",
+      "likes": 35
+    },
+    {
+      "id": 6,
+      "title": "Stonebreakers",
+      "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/53925_1484888367089_1380281183_31296443_2930737_o.jpg",
+      "artist": "Giovanni Giacometti",
+      "likes": 35
+    },
+    {
+      "id": 7,
+      "title": "Cows on a Stream",
+      "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/fritsmondrian.jpg",
+      "artist": "Frits Mondriaan",
+      "likes": 35
+    },
+    {
+      "id": 8,
+      "title": "Family portrait of Jan Miense Molenaer",
+      "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/lyester.jpg",
+      "artist": "Jan Miense Molenaer",
+      "likes": 35
+    },
+    {
+      "id": 9,
+      "title": "Girl with a Pearl Earring",
+      "image": "https://cdn.shopify.com/s/files/1/0047/4231/6066/files/Girl_with_a_Pearl_Earring_by_Johannes_Vermeer_1665_800x.jpg",
+      "artist": "Johannes Vermeer",
+      "likes": 35
+    },
+    {
+      "id": 10,
+      "title": "The Hunters in the Snow",
+      "image": "https://artincontext.org/wp-content/uploads/2021/10/Hunters-in-the-Snow-Bruegel-848x530.jpg",
+      "artist": "Pieter Bruegel",
+      "likes": 35
+    },
+    {
+      "id": 11,
+      "title": "The Lane of Poplars",
+      "image": "https://www.alfredsisley.org/thumbnail/152000/152478/mini_large/The-Lane-Of-Poplars-At-Moret-Sur-Loing.jpg?ts=1459229076",
+      "artist": "Alfred Sisley",
+      "likes": 35
+    },
+    {
+      "id": 12,
+      "title": "The Lovers",
+      "image": "https://www.renemagritte.org/images/paintings/the-lovers-2.jpg",
+      "artist": "Rene Magritte",
+      "likes": 35
+    },
+    {
+      "id": 13,
+      "title": "Metamorphosis of Narcissus",
+      "image": "https://www.dalipaintings.com/images/paintings/metamorphosis-of-narcissus.jpg",
+      "artist": "Salvador Dali",
+      "likes": 35
+    },
+    {
+      "id": 14,
+      "title": "Young Mother Sewing",
+      "image": "https://thetourguy.com/wp-content/uploads/2020/03/Young-Mother-Sewing-by-Mary-Cassatt.jpeg",
+      "artist": "Mary Cassatt",
+      "likes": 35
+    },
+    {
+      "id": 15,
+      "title": "The Dance Class",
+      "image": "https://thetourguy.com/wp-content/uploads/2020/03/DT46-947x1024-1-630x350.jpg",
+      "artist": "Edgar Degas",
+      "likes": 35
+    },
+    {
+      "id": 16,
+      "title": "Julie Le Brun Looking in a Mirror",
+      "image": "https://thetourguy.com/wp-content/uploads/2020/03/Julie-Le-Brun-by-Elisabeth-Louise-Vige%CC%81e-Le-Brun.jpeg",
+      "artist": "Elisabeth Louise Vigée Le Brun",
+      "likes": 35
+    },
+    {
+      "id": 17,
+      "title": "The Painter on his Way to Work",
+      "image": "https://smhttp-ssl-48028.nexcesscdn.net/pub/media/amasty/amoptmobile/catalog/product/cache/a05b5cb6232e66db94063a0d35d5c493/8/0/80243_ww701_hh761_jpg.webp",
+      "artist": "Vincent van Gogh",
+      "likes": 35
+    },
+    {
+      "id": 18,
+      "title": "Namida Series no. 0912",
+      "image": "https://d1ee3oaj5b5ueh.cloudfront.net/thumbs/680xAUTO_original_article_2021_03_605e0232a2e04.jpeg",
+      "artist": "Li Shan Chong",
+      "likes": 35
+    },
+    {
+      "id": 19,
+      "title": "348 West 22nd Street, Apartment A, Unit-2, Corridor and Staircase",
+      "image": "https://cdn.thespaces.com/wp-content/uploads/2019/11/348-West-22nd-Street-by-DO-Ho-Suh-EX8708-VW018-hpr-1024x683.jpg",
+      "artist": "Do Ho Suh",
+      "likes": 35
+    },
+    {
+      "id": 20,
+      "title": "Lucynder",
+      "image": "http://munchable.com/wp-content/uploads/2021/01/Mona-Lisa-Nigerian-Model.jpg",
+      "artist": "Olawale Ololade",
       "likes": 35
     }
   ]
