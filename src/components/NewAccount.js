@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory} from "react-router-dom";
 import { Button, Form, Grid, Segment } from 'semantic-ui-react'
 
-function NewAccount({ API, setArtists, artists, setUsername, setPassword }) {
+function NewAccount({ API, artists, setArtists, setUsername, setPassword }) {
     const [name, setName] = useState("");
     const [newUsername, setNewUsername] = useState("");
     const [newPassword, setNewPassword] = useState("");
@@ -15,7 +15,8 @@ function NewAccount({ API, setArtists, artists, setUsername, setPassword }) {
             name,
             username: newUsername,
             password: newPassword,
-            bio
+            bio,
+            favorites: []
         };
         fetch(API, {
             method: "POST",

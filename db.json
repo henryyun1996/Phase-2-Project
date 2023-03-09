@@ -6,7 +6,13 @@
       "username": "henry",
       "password": "password",
       "bio": "about me etc etc",
-      "favorites": "artwork"
+      "favorites": [
+        "Summer Evening",
+        "Melancholy",
+        "Girl with a Pearl Earring",
+        "Circus Performers and Animals",
+        "The Lane of Poplars"
+      ]
     },
     {
       "id": 2,
@@ -14,7 +20,10 @@
       "username": "gaby",
       "password": "1234",
       "bio": "about me etc etc",
-      "favorites": "artwork"
+      "favorites": [
+        "The Double",
+        "Cows on a Stream"
+      ]
     },
     {
       "id": 3,
@@ -22,7 +31,7 @@
       "username": "vince",
       "password": "vince",
       "bio": "about me etc etc",
-      "favorites": "artwork"
+      "favorites": []
     },
     {
       "id": 4,
@@ -30,13 +39,14 @@
       "username": "leo",
       "password": "leo123",
       "bio": "about me etc etc",
-      "favorites": "artwork"
+      "favorites": []
     },
     {
       "name": "Joy",
       "username": "joiboi",
       "password": "bori",
       "bio": "modern/ contemporary",
+      "favorites": [],
       "id": 5
     }
   ],
@@ -46,17 +56,8 @@
       "title": "Summer Evening",
       "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq",
       "artist": "Edward Hopper",
-      "likes": 49,
-      "favorited": true
-    },
-    {
-      "id": 21,
-      "title": "Madonna",
-      "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55",
-      "artist": "Edvard Munch",
-      "favorited": true,
-      "summary": "The painting depicts a young couple standing on an old-fashioned white porch at night, bathed in a bright white light. Although the two are clearly meant to be the subject of the work, they are depicted as being relatively small in scale - the surrounding porch, walls and lawn seem to nearly overwhelm them.",
-      "likes": 49
+      "summary": "This painting depicts a young couple standing on an old-fashioned white porch at night, bathed in a bright white light. Although the two are clearly meant to be the subject of the work, they are depicted as being relatively small in scale - the surrounding porch, walls and lawn seem to nearly overwhelm them.",
+      "likes": 54
     },
     {
       "id": 2,
@@ -64,7 +65,7 @@
       "image": "https://www.edvardmunch.org/images/paintings/melancholy.jpg",
       "artist": "Edvard Munch",
       "summary": "Melancholy (Norwegian: Melankoli, also known as Jappe on the Beach, Jealousy or Evening) depicts a man with his head resting in his hand in a pensive mood at the edge of the shoreline.",
-      "likes": 92
+      "likes": 94
     },
     {
       "id": 3,
@@ -72,7 +73,7 @@
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/jared-french.jpg",
       "artist": "Jared French",
       "summary": "The narrative of this piece is ambiguous. The central figure is either about to rise from or sink into a shallow grave. He is watched by his double, a rather fussily dressed figure in turtleneck and hat, who kneels with his thighs pressed tightly together and one palm upturned, as though urging his twin to rise.",
-      "likes": 35
+      "likes": 36
     },
     {
       "id": 4,
@@ -80,7 +81,7 @@
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/53925_1484888367089_1380281183_31296443_2930737_o.jpg",
       "artist": "Giovanni Giacometti",
       "summary": "This oil painting shows a team of archaelogists studying the remains of an excavated site. A portrayal of what is believed to be a port in Italy - Giovanni accurately captures the ambiance.",
-      "likes": 35
+      "likes": 36
     },
     {
       "id": 5,

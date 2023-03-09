@@ -7,6 +7,8 @@ import banner from "../images/welcome.png"
 function LogIn({ setCurrentUser, artists, username, setUsername, password, setPassword }) {
   const history = useHistory();
 
+  // console.log(artists)
+
   function handleLogInClick(e) {
     e.preventDefault();
     const artistLogIn = artists.find(artist => artist.username === username && artist.password === password);
@@ -73,10 +75,6 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
             onClick={handleCreateNewAccountClick}>Create New Account</Button>
           </div>
         </Grid.Column>
-
-            {/* <Button onClick={handleCreateNewAccountClick}>Create New Account</Button>
-          </div>
-        </Grid.Column> */}
       </Grid>
       <Divider vertical>Or</Divider>
     </Segment>
