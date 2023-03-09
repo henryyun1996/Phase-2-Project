@@ -34,8 +34,6 @@ function ArtistCollection( {setViewCreations, currentUser }) {
         <div >
         {artistCards}
         </div>
-        <div>
-        </div>
         </>
     )
 }

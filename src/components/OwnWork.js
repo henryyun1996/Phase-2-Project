@@ -1,38 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Divider, Grid, Image, Segment } from "semantic-ui-react";
+import { Divider, Grid, Segment } from "semantic-ui-react";
 
-function OwnWork() {
-  const [favorited, setFavorited] = useState([])
+function OwnWork({ currentUser }) {
+  const [favorited, setFavorited] = useState({ favorites: [] });
 
   useEffect(() => {
-    fetch("http://localhost:3000/artwork")
+    fetch(`http://localhost:3000/artists/${currentUser.id}`)
     .then(res => res.json())
-    .then(artwork => filterFavorites(artwork))
+    .then(setFavorited)
+    .catch(error => console.log('Error fetching favorites:', error))
   }, [])
-    
-  function filterFavorites(artwork) {
-    const onlyFavs = artwork.filter((fav) => 
-    fav.favorited === true)
-    setFavorited(onlyFavs)
-  }
-  console.log(favorited)
-  const favoritesList = favorited.map ((creation) => {
-  return (
-    <>
-     <div className="center aligned content">
-        <span className="ui header">Title: {creation.title}</span>
-        <br/>
-        <span className="header">Artist: {creation.artist}</span>
-      </div> 
-      <div className="ui medium image">
-        <img src={creation.image} alt={creation.title} className="gallery bordered image"/>
-      </div>
-    <button className="ui like button">Remove from favorites</button>
-    <Divider/></>
-  )
-  })
 
+  const userFavoritesList = favorited.favorites
+  
+  const listFavorites = userFavoritesList.map((favorite) => {
+    return (
+      <div key={favorite}>
+        <div className="center aligned content">
+          <span className="ui header">Title: {favorite}</span>
+        </div>
+      </div>
+    )
+  })
+    
     return (
     <>
     <div className="ui menu">
@@ -44,20 +35,18 @@ function OwnWork() {
     <h1>Profile</h1>
     <br/>
     <Segment>
-    <Grid columns={1} relaxed='very'>
+    <Grid columns={2} relaxed='very'>
       <Grid.Column>
-       <h2>My Favorites</h2>
-            {favoritesList}
+       <h2>My Favorites:</h2>
+            {userFavoritesList.length > 0 ? (
+              listFavorites
+            ) : (
+              <p>No favorites found.</p>
+            )}
       </Grid.Column>
-      {/* <Grid.Column>
-       <h2>Following</h2>
-       <ul>
-            <li>following</li>
-            <li>following</li>
-            <li>following</li>
-            <li>following</li>
-        </ul>
-      </Grid.Column> */}
+      <Grid.Column>
+        <h2>Following:</h2>
+      </Grid.Column>
       </Grid>
       </Segment>
     </div>

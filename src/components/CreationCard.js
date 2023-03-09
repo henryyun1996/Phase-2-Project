@@ -4,7 +4,7 @@ import { Button } from "semantic-ui-react";
 function Front({ creation }) {
     return (
         <div>
-            <img src={creation.image} alt={creation.title} className="gallery bordered image"/>
+            <img src={creation.image} alt={creation.title} />
         </div>
     )
 }
@@ -17,9 +17,12 @@ function Back({ creation }) {
     )
 }
 
-export default function CreationCard({creation, updateLikes, updateFavs}) {
-const [liked, setLiked] = useState(true)    
-const[showFront, setShowFront] = useState( true );
+function CreationCard({ creation, updateLikes, artists, setArtists, currentUser }) {
+    const[showFront, setShowFront] = useState( true );
+    const[favorited, setFavorited] = useState(false);
+    const [liked, setLiked] = useState(true)
+
+    console.log(favorited);
 
     function handleLike() {
         fetch ( `http://localhost:3000/artwork/${creation.id}`, {
@@ -39,24 +42,46 @@ const[showFront, setShowFront] = useState( true );
         setShowFront(showFront => !showFront)
     }
 
+    function toggleLiked() {
+        setLiked(liked => !liked)
+    }
 
-    function handleFav() {
-        fetch ( `http://localhost:3000/artwork/${creation.id}`, {
-            method: 'PATCH',
+    function handleFavorites() {
+        const updatedArtists = artists.map(artist => {
+            if (artist.id === currentUser.id) {
+                return {
+                    ...artist,
+                    favorites: [...artist.favorites, creation.title]
+                }
+            }
+            return artist
+        })
+
+        fetch(`http://localhost:3000/artists/${currentUser.id}`, {
+            method: "PATCH",
             headers: {
-                'Content-Type': 'application/json',
+                Accepts: "application/json",
+                "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                favorited: true, 
+                favorites: updatedArtists.find(artist => artist.id === currentUser.id).favorites
             })
         })
-        .then(res => res.json())
-        .then(updateFavs(creation))
+            .then(res => res.json())
+            .then(updatedArtist => {
+                setArtists(artists => {
+                    return artists.map(artist => {
+                        if(artist.id === updatedArtist.id) {
+                            return updatedArtist
+                        }
+                        return artist
+                    })
+                })
+                setFavorited(true)
+            })
+            .catch(err => console.log(err))
     }
 
-    function toggleLiked() {
-        setLiked(!liked)
-    }
     return (
     <div className="ui five wide column image">
         <div onClick={ toggleCard }>
@@ -70,27 +95,24 @@ const[showFront, setShowFront] = useState( true );
         onClick={handleLike}
         content='Likes'
         icon='heart'
-        label={{ basic: true, pointing: 'left', content: creation.likes  }}
+        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
     /> :  <Button 
         className="ui disabled button"
-        size='tiny'
         color='red'
         content='Thanks!'
         icon='heart'
-        label={{ basic: true, color: 'red', pointing: 'left', content: creation.likes  }}
+        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
     />}
-    {creation.favorited === true ? <Button 
-    size='tiny'
-    content='Added to Favorites'
-    icon='favorite'
-    />  : <Button 
-    size='tiny'
-    onClick={handleFav}
-    className="ui fav button"
-    content='Add to Favorites'
-    icon='favorite'
-    />}
-     </div>
+    <Button 
+        size='tiny'
+        className="ui fav button"
+        content='Add to Favorites'
+        icon='favorite'
+        onClick={handleFavorites}
+    />
+    </div>
 
     )
 }
+
+export default CreationCard;
