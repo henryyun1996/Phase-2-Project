@@ -68,7 +68,7 @@
       "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq",
       "artist": "Edward Hopper",
       "summary": "This painting depicts a young couple standing on an old-fashioned white porch at night, bathed in a bright white light. Although the two are clearly meant to be the subject of the work, they are depicted as being relatively small in scale - the surrounding porch, walls and lawn seem to nearly overwhelm them.",
-      "likes": 54
+      "likes": 21
     },
     {
       "id": 2,
@@ -76,7 +76,7 @@
       "image": "https://www.edvardmunch.org/images/paintings/melancholy.jpg",
       "artist": "Edvard Munch",
       "summary": "Melancholy (Norwegian: Melankoli, also known as Jappe on the Beach, Jealousy or Evening) depicts a man with his head resting in his hand in a pensive mood at the edge of the shoreline.",
-      "likes": 94
+      "likes": 52
     },
     {
       "id": 3,
@@ -84,7 +84,7 @@
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/jared-french.jpg",
       "artist": "Jared French",
       "summary": "The narrative of this piece is ambiguous. The central figure is either about to rise from or sink into a shallow grave. He is watched by his double, a rather fussily dressed figure in turtleneck and hat, who kneels with his thighs pressed tightly together and one palm upturned, as though urging his twin to rise.",
-      "likes": 36
+      "likes": 13
     },
     {
       "id": 4,
@@ -92,7 +92,7 @@
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/53925_1484888367089_1380281183_31296443_2930737_o.jpg",
       "artist": "Giovanni Giacometti",
       "summary": "This oil painting shows a team of archaelogists studying the remains of an excavated site. A portrayal of what is believed to be a port in Italy - Giovanni accurately captures the ambiance.",
-      "likes": 36
+      "likes": 49
     },
     {
       "id": 5,
@@ -100,7 +100,7 @@
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/fritsmondrian.jpg",
       "artist": "Frits Mondriaan",
       "summary": "Frits Mondriaan was a Dutch painter that loved depicting natural scenes in a semi-distorted way. His preference to paint under a red/yellow sun (either early in the day or late afternoon) shows here - as he paints one of his trademarks - cows!",
-      "likes": 35
+      "likes": 16
     },
     {
       "id": 6,
@@ -108,7 +108,7 @@
       "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/lyester.jpg",
       "artist": "Jan Miense Molenaer",
       "summary": "This family portrait depicts many generations of family members, even deceased ancestors. The painting symbolizes not only family unity but music stands the test of time. This can be interpreted because of subtle clock in the dead center at the top where the eldest ancestor would be.",
-      "likes": 35
+      "likes": 9
     },
     {
       "id": 7,
@@ -116,7 +116,7 @@
       "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55",
       "artist": "Edvard Munch",
       "summary": "Norwegian expressionist painter Edvard Munch was inspired by what he describes a 'scream throughout nature', depicts a bare-breasted half-length female figure created between 1892 and 1895 using oil paint on canvas.",
-      "likes": 50
+      "likes": 30
     },
     {
       "id": 8,
@@ -132,7 +132,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0047/4231/6066/files/Girl_with_a_Pearl_Earring_by_Johannes_Vermeer_1665_800x.jpg",
       "artist": "Johannes Vermeer",
       "summary": "One of the world's most renowned pieces - This piece symbolizes wealth in a very exagerrated manner. The pearl, not the girl, is the centerpiece and focus of this piece. Vermeer, at the time, could not afford a pearl of this size, and therefore, used glass or tin to give the illusion of the expensive artifact.",
-      "likes": 35
+      "likes": 60
     },
     {
       "id": 10,
@@ -140,7 +140,7 @@
       "image": "https://artincontext.org/wp-content/uploads/2021/10/Hunters-in-the-Snow-Bruegel-848x530.jpg",
       "artist": "Pieter Bruegel",
       "summary": "Bruegel's faith drove a lot of his art pieces. This painting is simply a message that the man himself is a powerless entity, of no consequence, who is at the mercy of the natural seasons and rhythms of the year. The implication is, that only faith in the Creator and the natural (divine) order can bring us meaning and comfort.",
-      "likes": 35
+      "likes": 44
     },
     {
       "id": 11,
@@ -148,7 +148,7 @@
       "image": "https://www.alfredsisley.org/thumbnail/152000/152478/mini_large/The-Lane-Of-Poplars-At-Moret-Sur-Loing.jpg?ts=1459229076",
       "artist": "Alfred Sisley",
       "summary": "Many consider this piece an interesting play between positive and negative space. The positive space being the trees and the negative space being the sky, clouds, and houses in the background. The woman resting along the stream almost blends in with the rest of nature and it utilizes a calm and low-contrast color scheme favored by many Impressionists. Interestingly, this painting was stolen 3 times - most recently from the Musée des Beaux-Arts in 2007.",
-      "likes": 35
+      "likes": 46
     },
     {
       "id": 12,
@@ -156,7 +156,7 @@
       "image": "https://www.renemagritte.org/images/paintings/the-lovers-2.jpg",
       "artist": "Rene Magritte",
       "summary": "Here, a barrier of fabric prevents the intimate embrace between two lovers, transforming an act of passion into one of isolation and frustration. Some have interpreted this work as a depiction of the inability to fully unveil the true nature of even our most intimate companions.",
-      "likes": 35
+      "likes": 58
     },
     {
       "id": 13,
@@ -164,7 +164,7 @@
       "image": "https://www.dalipaintings.com/images/paintings/metamorphosis-of-narcissus.jpg",
       "artist": "Salvador Dali",
       "summary": "This oil-on-canvas painting by Dali depicts his interpretation of the Greek myth of Narcissus. This painting is from the paranoiac-critical period and Dali began painting this in the spring of 1937 while in Zürs, Austria.",
-      "likes": 35
+      "likes": 26
     },
     {
       "id": 14,
@@ -172,7 +172,7 @@
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/Young-Mother-Sewing-by-Mary-Cassatt.jpeg",
       "artist": "Mary Cassatt",
       "summary": "Painted in 1900, Cassatt redirected her art toward woman caring for children - and children exclusively in about 1890. These themes could possibly be reflected in her affection for her nieces and nephews.",
-      "likes": 35
+      "likes": 19
     },
     {
       "id": 15,
@@ -180,7 +180,7 @@
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/DT46-947x1024-1-630x350.jpg",
       "artist": "Edgar Degas",
       "summary": "This work represents the one of the most ambitious paintings Degas devoted to the theme of dance. Around twenty-four women, ballerinas and their mothers, wait while a dancer executes an 'attitude' for her examination. Famous ballet master, Jules Perror, makes a cameo as a the instructor of the class.",
-      "likes": 35
+      "likes": 39
     },
     {
       "id": 16,
@@ -188,7 +188,7 @@
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/Julie-Le-Brun-by-Elisabeth-Louise-Vige%CC%81e-Le-Brun.jpeg",
       "artist": "Elisabeth Louise Vigée Le Brun",
       "summary": "Vigée Le Brun adored her daughter, Julie, and painted many pictures of her as she matured. In this piece, she ingeniously portrays the child in both profile and full face - drawing on the bond between them.",
-      "likes": 35
+      "likes": 48
     },
     {
       "id": 17,
@@ -196,7 +196,7 @@
       "image": "https://d1ee3oaj5b5ueh.cloudfront.net/thumbs/680xAUTO_original_article_2021_03_605e0232a2e04.jpeg",
       "artist": "Li Shan Chong",
       "summary": "Li Shan Chong is a Singaporean artist who explores the fragility of emotion within us all. One of her trademarks is that of a girl crying, as displayed in this piece.",
-      "likes": 35
+      "likes": 29
     },
     {
       "id": 18,
@@ -204,7 +204,7 @@
       "image": "https://cdn.thespaces.com/wp-content/uploads/2019/11/348-West-22nd-Street-by-DO-Ho-Suh-EX8708-VW018-hpr-1024x683.jpg",
       "artist": "Do Ho Suh",
       "summary": "Best known for his intricate sculptures that defy conventional notions of scale and site-specificity, Suh draws attention to the ways viewers occupy and inhabit space. In several of the artist's floor sculptures, viewers are encouraged to walk though and explore the piece from within.",
-      "likes": 35
+      "likes": 41
     },
     {
       "id": 19,
@@ -212,7 +212,7 @@
       "image": "https://smhttp-ssl-48028.nexcesscdn.net/pub/media/amasty/amoptmobile/catalog/product/cache/a05b5cb6232e66db94063a0d35d5c493/8/0/80243_ww701_hh761_jpg.webp",
       "artist": "Vincent van Gogh",
       "summary": "This painting is believed to have been destroyed in an air raid on Germany during the Second World War. It is thought to be the first self-portrait that van Gogh painted during his time in Arles.",
-      "likes": 35
+      "likes": 31
     },
     {
       "id": 20,
@@ -220,7 +220,136 @@
       "image": "http://munchable.com/wp-content/uploads/2021/01/Mona-Lisa-Nigerian-Model.jpg",
       "artist": "Olawale Ololade",
       "summary": "Inspired by the Mona Lisa, Ololade got the idea while in class learning about the legendary piece. Excited and with a vision, him and a group of friends shot his friend's portrait, Lucynder Osunde.",
+      "likes": 29
+    },
+    {
+      "id": 36,
+      "title": "Meditation Tree",
+      "image": "https://www.arthistoryproject.com/site/assets/files/27094/ibrahim-el-salahi-meditation-tree-2018-trivium-art-history.1200x0.webp",
+      "artist": "Ibrahim El-Salahi",
+      "summary": "Meditation Tree is an aluminum sculpture created by Ibrahim El-Salahi in 2018. It lives in the Vigo Gallery in London. The image is used according to educational fair use, and tagged woods, forests & trees, and sculpture.",
+      "likes": 48
+    },
+    {
+      "id": 37,
+      "title": "Embracing",
+      "image": "https://www.arthistoryproject.com/site/assets/files/30577/ibrahim_hussein-embracing-2001-trivium-art-history.1200x0.webp",
+      "artist": "Ibrahim Hussein",
+      "summary": "Embracing is an oil on canvas painting created by Ibrahim Hussein in 2001. It lives in a private collection. The image is used according to educational fair use and tagged love.",
+      "likes": 58
+    },
+    {
+      "id": 38,
+      "title": "Gratitude",
+      "image": "https://www.arthistoryproject.com/site/assets/files/28745/agnes_martin-gratitude-2001-trivium-art-history.1200x0.webp",
+      "artist": "Agnes Martin",
+      "summary": "Gratitude is a Minimalist acrylic, graphite and canvas painting created by Agnes Martin in 2001. It lives in a private collection. The image is Estate of Agnes Martin, and used according to educational fair use, and tagged abstract art.",
+      "likes": 45
+    },
+    {
+      "id": 39,
+      "title": "Untitled, 2001",
+      "image": "https://www.arthistoryproject.com/site/assets/files/28418/stelios_votsis-untitled-_2001-2001-trivium-art-history.webp",
+      "artist": "Stelios Votsis",
+      "summary": "Untitled, 2001 is an acrylic and paper board painting created by Stelios Votsis in 2001. The image is used according to educational fair use, and tagged saints and kites.",
+      "likes": 12
+    },
+    {
+      "id": 40,
+      "title": "Crowning Touch",
+      "image": "https://www.arthistoryproject.com/site/assets/files/28198/chakrabhand_posayakrit-crowning_touch-2003-trivium-art-history.1200x0.webp",
+      "artist": "Chakrabhand Posayakrit",
+      "summary": "Crowning Touch is an oil on canvas painting created by Chakrabhand Posayakrit in 2003. The image is used according to educational fair use, and tagged beuty, crowns and women.",
+      "likes": 24
+    }
+    ,
+    {
+      "id": 41,
+      "title": "Market Maneuvers",
+      "image": "https://www.arthistoryproject.com/site/assets/files/27224/ablade_glover-market_maneuvers-2003-trivium-art-history.1200x0.webp",
+      "artist": "Ablade Glover",
+      "summary": "Market Maneuvers is an oil on canvas painting created by Ablade Glover in 2003. The image is used according to educational fair use, and tagged crowds.",
+      "likes": 38
+    },
+    {
+      "id": 42,
+      "title": "Gifts of August",
+      "image": "https://www.arthistoryproject.com/site/assets/files/32182/durdy_bayramov-gifts_of_august-2004-trivium-art-history.webp",
+      "artist": "Durdy Bayramov",
+      "summary": "Gifts of August is a Realist oil on canvas painting created by Durdy Bayramov in 2004. It lives at the Durdy Bayramov Art Foundation in Canada. The image is Durdy Bayramov Estate, and used according to educational fair use, and tagged still life, fruit and pattern.",
       "likes": 35
+    },
+    {
+      "id": 43,
+      "title": "Girl (Self-portrait)",
+      "image": "https://www.arthistoryproject.com/site/assets/files/32235/gwendolyn_knight-girl_self-portrait_-2004-trivium-art-history.1200x0.webp",
+      "artist": "Gwendolyn Knight",
+      "summary": "Girl (Self-portrait) is a screenprint print created by Gwendolyn Knight in 2004. The image is used according to educational fair use, and tagged self-portraits.",
+      "likes": 6
+    },
+    {
+      "id": 44,
+      "title": "Overworked Woman",
+      "image": "https://www.arthistoryproject.com/site/assets/files/26943/bodo-overworked_woman-2005-trivium-art-history.webp",
+      "artist": "Bodo",
+      "summary": "Overworked Woman is a Zaire oil on canvas painting created by Bodo in 2005. It lives in a private collection. The image is used according to educational fair use, and tagged birds, flowers and women.",
+      "likes": 59
+    },
+    {
+      "id": 45,
+      "title": "Magdalena",
+      "image": "https://www.arthistoryproject.com/site/assets/files/24452/richard-hambleton-magdalena-2007-trivium-art-history.1200x0.webp",
+      "artist": "Richard Hambleton",
+      "summary": "Magdalena is a Post Modernist varnish, enamel paint, silver leaf, canvas and wood painting created by Richard Hambleton in 2007. The image is Woodard Gallery, and used according to educational fair use, and tagged clouds and landscape painting.",
+      "likes": 34
+    },
+    {
+      "id": 46,
+      "title": "Ada Ada",
+      "image": "https://www.arthistoryproject.com/site/assets/files/26200/alex-katz-ada-ada-2014-trivium-art-history.1600x0.webp",
+      "artist": "Alex Katz",
+      "summary": "Ada Ada is a Pop Art oil on canvas painting created by Alex Katz in 2014. The image is Alex Katz, and used according to educational fair use, and tagged portraits.",
+      "likes": 52
+    },
+    {
+      "id": 47,
+      "title": "A Bigger Interior with Blue Terrace",
+      "image": "https://www.arthistoryproject.com/site/assets/files/32384/david_hockney-a_bigger_interior_with_blue_terrace_and_garden-2017-obelisk-art-history.1600x0.webp",
+      "artist": "David Hockney",
+      "summary": "A Bigger Interior with Blue Terrace and Garden is a Pop Art acrylic painting created by David Hockney in 2017. It lives in a private collection. The image is David Hockney, and used according to educational fair use, and tagged gardens, perspective and shaped canvas.",
+      "likes": 34
+    },
+    {
+      "id": 48,
+      "title": "Animated Fantastic Landscape",
+      "image": "https://www.arthistoryproject.com/site/assets/files/26966/bodo-animated_fantastic_landscape-2001-trivium-art-history.1200x0.webp",
+      "artist": "Bodo",
+      "summary": "Animated Fantasic Landscape is a Surrealist and Zaire oil on canvas painting created by Bodo in 2001. The image is used according to educational fair use, and tagged airships and allegory.",
+      "likes": 50
+    },
+    {
+      "id": 49,
+      "title": "99 cent",
+      "image": "https://d2jv9003bew7ag.cloudfront.net/uploads/Andreas-Gursky-99-Cents-1999-Image-via-crafthubscom.jpg",
+      "artist": "Andreas Gurksy",
+      "summary": "Andreas Gursky captures vibrant, highly detailed images of everyday scenes from contemporary society to showcase its excess and information overload. Here he captures a shot from a 99 cent store in Los Angeles.",
+      "likes": 30
+    },
+    {
+      "id": 50,
+      "title": "The Grand Canal at the Church of La Salute",
+      "image": "https://artincontext.org/wp-content/uploads/2021/08/Italian-Landscape-Painters.jpg",
+      "artist": "Giovanni Antonio Canal",
+      "summary": "Giovanni Antonio Canal was an Italian landscape artist from Venice. This piece is considered a Veduta, which is a style portraying realistic landscape painting. Despite the accurate depiction of topographical elements, the painting still manages to portray a feeling of splendor and poetic beauty.",
+      "likes": 27
+    },
+    {
+      "id": 51,
+      "title": "The Hay Wain",
+      "image": "https://artincontext.org/wp-content/uploads/2021/08/Famous-Painted-Landscapes.jpg",
+      "artist": "John Constable",
+      "summary": "Constable was born in Suffolk, England in 1776 and was known for his landscape paintings. His work became so synonymous with the area known as Dedham Vale that it gained the new title 'Constable Country.' It portrays a farm next to the River Stour, which runs between the towns of Essex and Suffolk in England.",
+      "likes": 19
     }
   ]
 }
