@@ -4,7 +4,7 @@ import { Button } from "semantic-ui-react";
 function Front({ creation }) {
     return (
         <div>
-            <img src={creation.image} alt={creation.title} />
+            <img src={creation.image} alt={creation.title} className='gallery bordered image' />
         </div>
     )
 }
@@ -37,6 +37,21 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
         .then(res => res.json())
         .then(updateLikes(creation))
         toggleLiked()
+    }
+
+    function handleUnlike() {
+        fetch ( `http://localhost:3000/artwork/${creation.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                likes: creation.likes -= 1, 
+            })
+        })
+        .then(res => res.json())
+        .then(updateLikes(creation))
+        toggleLiked() 
     }
     function toggleCard() {
         setShowFront(showFront => !showFront)
@@ -95,21 +110,28 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
         onClick={handleLike}
         content='Likes'
         icon='heart'
-        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
+        label={{ basic: true, pointing: 'left', content: creation.likes  }}
     /> :  <Button 
-        className="ui disabled button"
+        className="ui button"
+        onClick={handleUnlike}
+        size='tiny'
         color='red'
         content='Thanks!'
         icon='heart'
-        label={{ basic: true, color: 'blue', pointing: 'left', content: creation.likes  }}
+        label={{ basic: true, color: 'red', pointing: 'left', content: creation.likes  }}
     />}
-    <Button 
-        size='tiny'
-        className="ui fav button"
-        content='Add to Favorites'
-        icon='favorite'
-        onClick={handleFavorites}
-    />
+    {favorited ? <Button 
+    size='tiny'
+    className="ui button"
+    content='Added to Favorites'
+    icon='check'
+    onClick={handleFavorites}/>: <Button 
+    size='tiny'
+    className="ui fav button"
+    content='Add to Favorites'
+    icon='favorite'
+    onClick={handleFavorites}
+    />}
     </div>
 
     )

@@ -47,7 +47,7 @@
       "name": "Leo",
       "username": "leo",
       "password": "leo123",
-      "bio": "about me etc etc",
+      "bio": "oil paintings",
       "favorites": [],
       "following": []
     },
@@ -68,7 +68,7 @@
       "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq",
       "artist": "Edward Hopper",
       "summary": "This painting depicts a young couple standing on an old-fashioned white porch at night, bathed in a bright white light. Although the two are clearly meant to be the subject of the work, they are depicted as being relatively small in scale - the surrounding porch, walls and lawn seem to nearly overwhelm them.",
-      "likes": 21
+      "likes": 56
     },
     {
       "id": 2,
@@ -261,8 +261,7 @@
       "artist": "Chakrabhand Posayakrit",
       "summary": "Crowning Touch is an oil on canvas painting created by Chakrabhand Posayakrit in 2003. The image is used according to educational fair use, and tagged beuty, crowns and women.",
       "likes": 24
-    }
-    ,
+    },
     {
       "id": 41,
       "title": "Market Maneuvers",

@@ -35,7 +35,7 @@ function OwnWork({ currentUser }) {
     <h1>Profile</h1>
     <br/>
     <Segment>
-    <Grid columns={2} relaxed='very'>
+    <Grid columns={1} relaxed='very'>
       <Grid.Column>
        <h2>My Favorites:</h2>
             {userFavoritesList.length > 0 ? (
@@ -44,11 +44,7 @@ function OwnWork({ currentUser }) {
               <p>No favorites found.</p>
             )}
       </Grid.Column>
-      <Grid.Column>
-        <h2>Following:</h2>
-      </Grid.Column>
       </Grid>
-      <Divider vertical></Divider>
       </Segment>
     </div>
     </>
