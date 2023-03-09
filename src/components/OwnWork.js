@@ -48,6 +48,7 @@ function OwnWork({ currentUser }) {
         <h2>Following:</h2>
       </Grid.Column>
       </Grid>
+      <Divider vertical></Divider>
       </Segment>
     </div>
     </>

@@ -3,10 +3,10 @@ import { Card } from "semantic-ui-react";
 
 function ArtistCard({ artist, showFavs }) {
 
-const [following ,setFollowing] = useState(true)
-const toggleFollow = () => {
+  const [following ,setFollowing] = useState(true)
+  const toggleFollow = () => {
     setFollowing(!following);
-}
+  }
 
     return (
     <Card.Group className="ui grid">
@@ -36,4 +36,3 @@ const toggleFollow = () => {
 }
 
 export default ArtistCard
-
