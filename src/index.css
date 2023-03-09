@@ -114,7 +114,7 @@ ul {
 }
 
 .welcome {
-  background: url(/Users/gabygalvan/Development/code/phase-2/Phase-2-Project/src/images/texture1.png) no-repeat center center fixed; 
+  background: url() no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
