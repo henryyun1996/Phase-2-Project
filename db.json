@@ -11,19 +11,27 @@
         "Melancholy",
         "Girl with a Pearl Earring",
         "Circus Performers and Animals",
-        "The Lane of Poplars"
-      ]
+        "The Lane of Poplars",
+        "Lucynder",
+        "Namida Series no. 0912"
+      ],
+      "following": []
     },
     {
       "id": 2,
       "name": "Gaby",
       "username": "gaby",
-      "password": "1234",
+      "password": "password",
       "bio": "about me etc etc",
       "favorites": [
-        "The Double",
-        "Cows on a Stream"
-      ]
+        "Summer Evening",
+        "Melancholy",
+        "Girl with a Pearl Earring",
+        "Circus Performers and Animals",
+        "The Lane of Poplars",
+        "Lucynder"
+      ],
+      "following": []
     },
     {
       "id": 3,
@@ -31,7 +39,8 @@
       "username": "vince",
       "password": "vince",
       "bio": "about me etc etc",
-      "favorites": []
+      "favorites": [],
+      "following": []
     },
     {
       "id": 4,
@@ -39,7 +48,8 @@
       "username": "leo",
       "password": "leo123",
       "bio": "about me etc etc",
-      "favorites": []
+      "favorites": [],
+      "following": []
     },
     {
       "name": "Joy",
@@ -47,6 +57,7 @@
       "password": "bori",
       "bio": "modern/ contemporary",
       "favorites": [],
+      "following": [],
       "id": 5
     }
   ],

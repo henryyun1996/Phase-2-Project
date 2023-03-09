@@ -16,7 +16,8 @@ function NewAccount({ API, artists, setArtists, setUsername, setPassword }) {
             username: newUsername,
             password: newPassword,
             bio,
-            favorites: []
+            favorites: [],
+            following:[]
         };
         fetch(API, {
             method: "POST",
