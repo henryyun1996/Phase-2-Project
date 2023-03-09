@@ -1,5 +1,6 @@
 import {React, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
+import { Grid, Segment } from "semantic-ui-react";
 import ArtistCard from "./ArtistCard";
 
 
@@ -17,8 +18,12 @@ function ArtistCollection( {setViewCreations, currentUser }) {
     }, [currentUser]);
 
     const artistCards =  artistData.map(artist => {
-       return <ArtistCard artist={artist} key={artist.id} setViewCreations={setViewCreations}/>
+       return <ArtistCard artist={artist} key={artist.id} showFavs={showFavs}/>
     })
+
+    function showFavs() {
+        return <div>helloooo</div>
+    }
 
     return (
         <>

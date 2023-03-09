@@ -1,32 +1,11 @@
 import React, { useState } from "react";
-// import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import { Card } from "semantic-ui-react";
 
-function ArtistCard({ artist }) {
-
-// const [page, setPage] = useState("/");
-// const history = useHistory();
-
-
-
-// function handleChangePage(path) {
-//     setPage(path);
-//     history.push(path);
-// }
-      
-
-// const handleViewClick =() => {
-// handleChangePage(`/gallery/${artist.name}`)
-// console.log(`/${artist.name}`)
-// }
+function ArtistCard({ artist, showFavs }) {
 
 const [following ,setFollowing] = useState(true)
 const toggleFollow = () => {
     setFollowing(!following);
-}
-
-function toggleCard() {
-  console.log('Toggling card')
 }
 
     return (
@@ -46,7 +25,7 @@ function toggleCard() {
           </button>) : (<button onClick={toggleFollow} className={'ui button'}>
             Following
           </button>)}
-          <button className={'ui button'} onClick={toggleCard}>
+          <button className={'ui button'} onClick={showFavs}>
             View Favorites
           </button>
         </Card.Content>
