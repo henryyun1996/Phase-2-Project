@@ -57,7 +57,9 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
               />
               </Form.Field>
               <br/>
-              <Button onClick={handleLogInClick}>Log In</Button>
+              <Button 
+              className='ui like button'
+              onClick={handleLogInClick}>Log In</Button>
               <br/>
           </div>
           </Form>
@@ -66,7 +68,9 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
           <div >
             <h1>Let's get you started!</h1>
             <p>Signing up takes 1 minute!</p>
-            <Button onClick={handleCreateNewAccountClick}>Create New Account</Button>
+            <Button 
+            className='ui like button'
+            onClick={handleCreateNewAccountClick}>Create New Account</Button>
           </div>
         </Grid.Column>
 

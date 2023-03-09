@@ -103,13 +103,13 @@ ul {
   max-width: 85%
 }
 
-/* .welcome {
-  background: url(/Users/gabygalvan/Development/code/phase-2/Phase-2-Project/welcome.png) no-repeat center center fixed; 
+.welcome {
+  background: url(/Users/gabygalvan/Development/code/phase-2/Phase-2-Project/src/images/texture1.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
+}
 
 .ui.like.button {
   background-color: #822c2a;

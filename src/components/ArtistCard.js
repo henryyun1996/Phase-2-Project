@@ -20,12 +20,12 @@ const toggleFollow = () => {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          {following ? (<button onClick={toggleFollow} className={'ui primary button'}>
+          {following ? (<button onClick={toggleFollow} className={'ui like button'}>
             Follow
           </button>) : (<button onClick={toggleFollow} className={'ui button'}>
             Following
           </button>)}
-          <button className={'ui button'} onClick={showFavs}>
+          <button className={'ui fav button'} onClick={showFavs}>
             View Favorites
           </button>
         </Card.Content>
