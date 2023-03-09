@@ -32,17 +32,13 @@ function ArtistCollection( {setViewCreations, currentUser }) {
         <Link to= "/home" className="item">Home</Link>
         <Link to= "/" className="item">Log Out</Link>
         </div>
-
-    <Segment>
-    <Grid columns={3}>
-      <Grid.Column>
-       {artistCards}
-      </Grid.Column>
-      <Grid.Column>
-       <h1 className="ui block header">Artist Component</h1>
-      </Grid.Column>
-    </Grid>
-      </Segment>
+        <div>
+        <h1 className="ui block header">Artist Component</h1>
+        </div>
+        <br/>
+        <div >
+        {artistCards}
+        </div>
         </>
     )
 }

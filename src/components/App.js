@@ -5,7 +5,6 @@ import NewAccount from "./NewAccount";
 import HomePage from "./HomePage";
 import ArtistCollection from "./ArtistCollection";
 import OwnWork from "./OwnWork";
-import Gallery from "./Gallery";
 
 const artistAPI = 'http://localhost:3000/artists';
 
@@ -18,8 +17,11 @@ function App() {
   useEffect(() => {
     fetch(artistAPI)
       .then(res => res.json())
-      .then(artistData => setArtists(artistData))
-      .catch(error => console.error(error));
+      .then(artistData => {
+        // console.log(artistData);
+        setArtists(artistData);
+      })
+      .catch(error => console.log(error));
   }, []);
 
   return (
@@ -38,32 +40,34 @@ function App() {
       </Route>
       <Route exact path="/new-account">
         <NewAccount 
-          username={username} 
-          setUsername={setUsername} 
-          password={password} 
-          setPassword={setPassword} 
           API={artistAPI}
           artists={artists}
           setArtists={setArtists}
+          setUsername={setUsername} 
+          setPassword={setPassword} 
         />
       </Route>
       <Route exact path="/home">
         <HomePage 
-          currentUser={currentUser} 
+          currentUser={currentUser}
+          artists={artists}
+          setArtists={setArtists}
         />
       </Route>
       <Route exact path="/artist-collection">
         <ArtistCollection 
           currentUser={currentUser} 
           artists={artists}
+          setArtists={setArtists}
         />
       </Route>
       <Route exact path="/creations">
         <OwnWork 
-        currentUser={currentUser} 
+          currentUser={currentUser}
+          artists={artists}
+          setArtists={setArtists} 
       />
       </Route>
-      <Route path="/gallery" component={Gallery}/>
       <Route path="*">
         <h1>404 not found</h1>
       </Route>
