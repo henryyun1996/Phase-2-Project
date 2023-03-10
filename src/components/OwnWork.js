@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { Divider, Grid, Segment } from "semantic-ui-react";
 
 function OwnWork({ currentUser }) {
-  const [favorited, setFavorited] = useState({ favorites: [] });
+  const [favorited, setFavorited] = useState({ favorites: [{ title: "", image: ""}] });
 
   useEffect(() => {
     fetch(`http://localhost:3000/artists/${currentUser.id}`)
     .then(res => res.json())
-    .then(setFavorited)
+    .then(favoritedInfo => setFavorited(favoritedInfo))
     .catch(error => console.log('Error fetching favorites:', error))
   }, [])
 
@@ -18,7 +18,8 @@ function OwnWork({ currentUser }) {
     return (
       <div key={favorite}>
         <div className="center aligned content">
-          <span className="ui header">Title: {favorite}</span>
+          <span className="ui header">Title: {favorite.title}</span>
+          <img src={favorite.image}/>
         </div>
       </div>
     )

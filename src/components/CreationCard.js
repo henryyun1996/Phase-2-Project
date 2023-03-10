@@ -18,8 +18,8 @@ function Back({ creation }) {
 }
 
 function CreationCard({ creation, updateLikes, artists, setArtists, currentUser }) {
-    const[showFront, setShowFront] = useState( true );
-    const[favorited, setFavorited] = useState(false);
+    const [showFront, setShowFront] = useState( true );
+    const [favorited, setFavorited] = useState(false);
     const [liked, setLiked] = useState(true)
 
     console.log(favorited);
@@ -62,15 +62,18 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
     }
 
     function handleFavorites() {
-        const updatedArtists = artists.map(artist => {
-            if (artist.id === currentUser.id) {
-                return {
-                    ...artist,
-                    favorites: [...artist.favorites, creation.title]
-                }
-            }
-            return artist
-        })
+        const updatedArtists = artists.map((artist) => {
+          if (artist.id === currentUser.id) {
+            return {
+              ...artist,
+              favorites: [
+                ...artist.favorites,
+                { title: creation.title, image: creation.image },
+              ],
+            };
+          }
+          return artist;
+        });
 
         fetch(`http://localhost:3000/artists/${currentUser.id}`, {
             method: "PATCH",
