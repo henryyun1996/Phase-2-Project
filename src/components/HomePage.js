@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
+import { Sticky } from "semantic-ui-react";
 import Buttons from "./Buttons";
 import CreationCard from "./CreationCard";
 
@@ -57,20 +58,23 @@ function HomePage({ currentUser, artists, setArtists }) {
           Log Out
         </Link>
       </div>
-      <div>
-        <h1>{currentUser ? `Hello ${currentUser && currentUser.name}!` : "Welcome!"}</h1>
+        <div>
+        <h1 className="ui left aligned header">{currentUser ? `Hello ${currentUser && currentUser.name}!` : "Welcome!"}</h1>
         <Buttons onChangePage={handleChangePage}/>
         <br/>
-        <div>
-          <h1 className="ui block header">Gallery</h1>
-        </div>
-        <div onSubmit={handleSearch} className="ui fluid action input">
+        <div className="ui dividing header">
+          <h1>Gallery
+          <div className="sub header">Click on an art piece to learn more about it</div>
+          </h1>
+          <br/>
+      </div>
+      <div onSubmit={handleSearch} className="ui fluid action input">
           <input 
             type="text"
             placeholder="Search..."
             onChange={(e) => handleSearch(e.target.value)}
           />
-          <div className="ui button">Search</div>
+          <div className="ui fav button">Search</div>
         </div>
         <br/>
         <div className="ui grid container">{creations}</div>

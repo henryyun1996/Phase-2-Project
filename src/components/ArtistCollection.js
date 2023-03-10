@@ -1,12 +1,12 @@
 import {React, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
-import { Grid } from "semantic-ui-react";
+import { Grid, Sticky } from "semantic-ui-react";
 import ArtistCard from "./ArtistCard";
 
 
-function ArtistCollection( {setViewCreations, currentUser }) {
+function ArtistCollection( { currentUser }) {
     const [artistData, setArtistData] = useState([])
-    const [selectedArtist, setSelectedArtist] = useState(null);
+    const [selectedArtist, setSelectedArtist] = useState('');
     const artistAPI = 'http://localhost:3000/artists'
 
     useEffect(() => {
@@ -44,21 +44,23 @@ function ArtistCollection( {setViewCreations, currentUser }) {
         <Link to= "/" className="item">Log Out</Link>
         </div>
         <div>
-        <h1 className="ui block header">Artist Component</h1>
+        <h1 className="ui block header">Find Friends with Similar Art Taste</h1>
         </div>
         <br/>
         <div >
             <Grid columns={16} relaxed='very'>
-                <Grid.Column width={5}>{artistCards}</Grid.Column>
+                <Grid.Column scrolling width={5}>{artistCards}</Grid.Column>
                 <Grid.Column width={10} style={{ border: '1px solid black', borderRadius: '10px' }}>
+                    <Sticky>
                     <h1>Favorites: </h1>
                     {selectedArtist && selectedArtist.favorites.length >0 ? (
                         selectedArtist && selectedArtist.favorites.map((fav, index) => (
-                            <p key={index}>Title: {fav}</p>
+                            <h4 key={index}>Title: <span>{fav}</span></h4>
                         ))
                     ) : (
-                        <h1>You don't have any favorite pieces yet!</h1>
+                        <h1> {selectedArtist.name} doesn't have any favorite pieces yet 😔</h1>
                     )}
+                    </Sticky>
                 </Grid.Column>
             </Grid>
         </div>

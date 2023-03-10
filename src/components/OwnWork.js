@@ -32,12 +32,12 @@ function OwnWork({ currentUser }) {
         <Link to= "/" className="item">Log Out</Link>
     </div>
     <div>
-    <h1>Profile</h1>
+    <h1 className="ui block header">{currentUser.name}'s Profile</h1>
     <br/>
     <Segment>
     <Grid columns={1} relaxed='very'>
-      <Grid.Column>
-       <h2>My Favorites:</h2>
+      <Grid.Column style={{ textAlign: 'left' }}>
+       <h2 >My Favorites:</h2>
             {userFavoritesList.length > 0 ? (
               listFavorites
             ) : (

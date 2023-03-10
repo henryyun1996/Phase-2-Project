@@ -31,15 +31,14 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
   return (
     <>
     <img alt='' src={banner} className= "ui fluid image"/>
-    <Segment placeholder verticalAlign='middle' style={{ height: '50vh' }}>
-      <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle' columns={2} relaxed='very' stackable>
-        <Grid.Column >
+    <Segment secondary style={{ height: '50vh' }}>
+      <Grid columns={2} relaxed='very' stackable>
+        <Grid.Column verticalAlign='middle' >
           <Form>
           <h1>Welcome Back!</h1>
           <p>We're excited to see you again</p>
           <br/>
-          <div>
-            <Form.Field>
+            <Form.Field >
               <label style={{ textAlign: 'left' }}>Username:</label>
               <Form.Input
                 type="text"
@@ -63,13 +62,12 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
               className='ui like button'
               onClick={handleLogInClick}>Log In</Button>
               <br/>
-          </div>
           </Form>
         </Grid.Column>
         <Grid.Column verticalAlign='middle' >
           <div >
             <h1>Let's get you started!</h1>
-            <p>Signing up takes 1 minute!</p>
+            <p>We'll get you looking at amazing art pieces in no time</p>
             <Button 
             className='ui like button'
             onClick={handleCreateNewAccountClick}>Create New Account</Button>

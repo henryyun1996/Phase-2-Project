@@ -59,6 +59,36 @@
       "favorites": [],
       "following": [],
       "id": 5
+    },
+    {
+      "name": "Krista",
+      "username": "krista",
+      "password": "1234",
+      "bio": "Art Nouveau",
+      "favorites": [
+        "The Lane of Poplars",
+        "The Lovers"
+      ],
+      "following": [],
+      "id": 6
+    },
+    {
+      "name": "Lauren",
+      "username": "LB2",
+      "password": "1234",
+      "bio": "maximalism",
+      "favorites": [],
+      "following": [],
+      "id": 7
+    },
+    {
+      "name": "Val",
+      "username": "valentine",
+      "password": "password",
+      "bio": "Pop art",
+      "favorites": [],
+      "following": [],
+      "id": 8
     }
   ],
   "artwork": [
