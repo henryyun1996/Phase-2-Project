@@ -27,7 +27,36 @@
       "username": "gaby",
       "password": "1234",
       "bio": "about me etc etc",
-      "favorites": []
+      "favorites": [
+        {
+          "title": "Daydream",
+          "image": "https://ncartmuseum.org/wp-content/uploads/2021/10/L-114-Reverie-1897.jpg"
+        },
+        {
+          "title": "Sky Above Clouds IV",
+          "image": "https://www.artic.edu/iiif/2/8fa4d1dd-b05f-eb8d-b83f-7b5dd65642db/full/843,/0/default.jpg"
+        },
+        {
+          "title": "Crying Girl",
+          "image": "https://www.guyhepner.com/wp-content/uploads/2015/11/Crying-Girl-.png"
+        },
+        {
+          "title": "Girl (Self-portrait)",
+          "image": "https://www.arthistoryproject.com/site/assets/files/32235/gwendolyn_knight-girl_self-portrait_-2004-trivium-art-history.1200x0.webp"
+        },
+        {
+          "title": "A Bigger Interior with Blue Terrace",
+          "image": "https://www.arthistoryproject.com/site/assets/files/32384/david_hockney-a_bigger_interior_with_blue_terrace_and_garden-2017-obelisk-art-history.1600x0.webp"
+        },
+        {
+          "title": "Circus Performers and Animals",
+          "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/margaret-hoening-french.jpg"
+        },
+        {
+          "title": "The Double",
+          "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/jared-french.jpg"
+        }
+      ]
     },
     {
       "id": 3,
@@ -58,10 +87,7 @@
       "username": "krista",
       "password": "1234",
       "bio": "Art Nouveau",
-      "favorites": [
-        "The Lane of Poplars",
-        "The Lovers"
-      ],
+      "favorites": [],
       "following": [],
       "id": 6
     },
@@ -244,6 +270,126 @@
       "artist": "Olawale Ololade",
       "summary": "Inspired by the Mona Lisa, Ololade got the idea while in class learning about the legendary piece. Excited and with a vision, him and a group of friends shot his friend's portrait, Lucynder Osunde.",
       "likes": 29
+    },
+    {
+      "id": 21,
+      "title": "Birth of Venus",
+      "image": "http://www.italianrenaissance.org/wp-content/uploads/2012/08/Botticelli-Birth-of-Venus-590x370.jpg",
+      "artist": "Sandro Botticelli",
+      "summary": "In the painting we see here, Venus is prominently depicted in the center, born out of the foam as she rides to shore.  On the left, the figure of Zephyrus carries the nymph Chloris (alternatively identified as “Aura”) as he blows the wind to guide Venus",
+      "likes": 99
+    },
+    {
+      "id": 22,
+      "title": "Lady Lilith",
+      "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/337500/787246/main-image",
+      "artist": "Rossetti",
+      "summary": "Fascinated by women's physical allure, Rossetti here imagines a legendary femme fatale as a self-absorbed nineteenth-century beauty who combs her hair and seductively exposes her shoulders.",
+      "likes": 31
+    },
+    {
+      "id": 23,
+      "title": "Daydream",
+      "image": "https://ncartmuseum.org/wp-content/uploads/2021/10/L-114-Reverie-1897.jpg",
+      "artist": "Alphonse Mucha",
+      "summary": "The composition features a dreamy young woman in a beautifully embroidered Slavic dress. She leafs through the pages of a decorative design book. Her figure is set against a prominent halo—used by Mucha as a symbol of universal harmony—which is decorated with an elaborate floral pattern.",
+      "likes": 12
+    },
+    {
+      "id": 24,
+      "title": "Judith beheading Holofernes",
+      "image": "https://images.uffizi.it/production/attachments/1506165873655660-artemisia-giuditta-principale.jpg?ixlib=rails-2.1.3&w=1200&h=800&fit=clip&crop=center&fm=pjpg&auto=compress",
+      "artist": "Caravaggio",
+      "summary": "In this powerful painting in the Gallery of the Statues and Paintings of the Uffizi, (c. 1620), Artemisia Gentileschi portrays the moment that Holofernes is killed by the hand of the determined and powerful Judith. The overall effect is both powerful and frightening: the drunk corpulent general is lying on the bed, his head grasped by his hair and the sword plunged into his neck.",
+      "likes": 38
+    },
+    {
+      "id": 25,
+      "title": "Ophelia",
+      "image": "https://media.tate.org.uk/art/images/work/N/N01/N01506_9.jpg",
+      "artist": "John Everett Millais",
+      "summary": "The scene depicted is from Shakespeare's Hamlet, Act IV, Scene vii, in which Ophelia, driven out of her mind when her father is murdered by her lover Hamlet, falls into a stream and drowns",
+      "likes": 48
+    },
+    {
+      "id": 26,
+      "title": "Sky Above Clouds IV",
+      "image": "https://www.artic.edu/iiif/2/8fa4d1dd-b05f-eb8d-b83f-7b5dd65642db/full/843,/0/default.jpg",
+      "artist": "Georgia O'Keefe",
+      "summary": "Painted in the summer of 1965, when Georgia O'Keeffe was 77 years old, this monumental work culminates a series inspired by the artist's experiences as an airplane passenger during the 1950s.",
+      "likes": 66
+    },
+    {
+      "id": 27,
+      "title": "Cows Skull with Calico Rose",
+      "image": "https://www.artic.edu/iiif/2/2d695bad-1205-6185-c3aa-3fd42210dbf9/full/843,/0/default.jpg",
+      "artist": "Georgia O'Keefe",
+      "summary": "Georgia O'Keeffe collected this cow's skull in New Mexico during the summer of 1930, when a drought had devasted the Southwest, and many animal skeletons could be found in the desert.",
+      "likes": 66
+    },
+    {
+      "id": 28,
+      "title": "Crying Girl",
+      "image": "https://www.guyhepner.com/wp-content/uploads/2015/11/Crying-Girl-.png",
+      "artist": "Roy Lichtenstein",
+      "summary": "Lichtenstein's “Crying Girl” goes beyond his desire to create comic-like artworks. Here, he studies the gendered aspects of the female identity. Immediately, the viewer's focus lays upon the emotions of the subject, as it takes over the painting.",
+      "likes": 18
+    },
+    {
+      "id": 29,
+      "title": "Shot Marilyns",
+      "image": "https://comicvine.gamespot.com/a/uploads/original/7/70215/6418621-000%20shot%20marilyns.jpg",
+      "artist": "Andy Warhol",
+      "summary": "In 1964, Warhol created portraits of Monroe based on a publicity photo for her 1953 film Niagara. He painted five Marilyn silkscreen portraits with different colored backgrounds: red, orange, light blue, sage blue, and turquoise, and stored them at The Factory, his studio on East 47th Street in Manhattan",
+      "likes": 33
+    },
+    {
+      "id": 30,
+      "title": "The Two Fridas",
+      "image": "https://cdn.kastatic.org/ka-perseus-images/74427da205ceccb64a4e285915d93823678118a2.jpg",
+      "artist": "Frida Kahlo",
+      "summary": "The Fridas are identical twins except in their attire, a poignant issue for Kahlo at this moment. The year she painted this canvas she was divorced from Diego Rivera, the acclaimed Mexican muralist. ",
+      "likes": 25
+    },
+    {
+      "id": 31,
+      "title": "The Child's Bath",
+      "image": "https://www.artic.edu/iiif/2/5de963b1-55e2-b349-6cd5-85f9bd2687ec/full/1686,/0/default.jpg",
+      "artist": "Mary Cassatt",
+      "summary": "In this work, Mary Cassatt addressed the theme for which she is best known—women and children—while also experimenting with compositional elements of Japanese art. ",
+      "likes": 16
+    },
+    {
+      "id": 32,
+      "title": "Woman with a Parasol",
+      "image": "https://www.claude-monet.com/images/paintings/woman-with-a-parasol.jpg",
+      "artist": "Claude Monet",
+      "summary": "Woman with a Parasol was painted outdoors, probably in a single session of several hours' duration. The artist intended the work to convey the feeling of a casual family outing rather than a formal portrait, and used pose and placement to suggest that his wife and son interrupted their stroll while he captured their likenesses.",
+      "likes": 45
+    },
+    {
+      "id": 33,
+      "title": "A Sunday Afternoon on the Island",
+      "image": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/1686,/0/default.jpg",
+      "artist": "Georges Seurat",
+      "summary": "In his best-known and largest painting, Georges Seurat depicted people from different social classes strolling and relaxing in a park just west of Paris on La Grande Jatte, an island in the Seine River.",
+      "likes": 15
+    },
+    {
+      "id": 34,
+      "title": "Proserpine",
+      "image": "https://media.tate.org.uk/art/images/work/N/N05/N05064_9.jpg",
+      "artist": "Dante Gabriel Rossetti",
+      "summary": "The figure represents Proserpine as Empress of Hades. After she was conveyed by Pluto to his realm, and became his bride, her mother Ceres importuned Jupiter for her return to earth, and he was prevailed on to consent to this, provided only she had not partaken of any of the fruits of Hades.",
+      "likes": 35
+    },
+    {
+      "id": 35,
+      "title": "Hopeless",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/58/Hopeless_%28Lichtenstein%29.jpg",
+      "artist": "Roy Lichtenstein",
+      "summary": "",
+      "likes": 24
     },
     {
       "id": 36,

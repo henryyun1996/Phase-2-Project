@@ -16,10 +16,10 @@ function OwnWork({ currentUser }) {
   
   const listFavorites = userFavoritesList.map((favorite) => {
     return (
-      <div key={favorite}>
-        <div className="center aligned content">
-          <span className="ui header">Title: {favorite.title}</span>
-          <img src={favorite.image}/>
+      <div key={favorite} >
+          <div className="ui image large">
+            <img src={favorite.image} alt={favorite.title} className=' gallery bordered image' />
+            <h4>{favorite.title}</h4>
         </div>
       </div>
     )
@@ -35,18 +35,14 @@ function OwnWork({ currentUser }) {
     <div>
     <h1 className="ui block header">{currentUser.name}'s Profile</h1>
     <br/>
-    <Segment>
-    <Grid columns={1} relaxed='very'>
-      <Grid.Column style={{ textAlign: 'left' }}>
+    <div className="">
        <h2 >My Favorites:</h2>
             {userFavoritesList.length > 0 ? (
               listFavorites
             ) : (
               <p>No favorites found.</p>
             )}
-      </Grid.Column>
-      </Grid>
-      </Segment>
+      </div>
     </div>
     </>
     )  

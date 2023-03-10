@@ -36,6 +36,8 @@ function ArtistCollection( { currentUser }) {
     //     return <div>helloooo</div>
     // }
 
+    console.log(selectedArtist)
+
     return (
         <>
         <div className="ui menu">
@@ -54,8 +56,11 @@ function ArtistCollection( { currentUser }) {
                     <Sticky>
                     <h1>Favorites: </h1>
                     {selectedArtist && selectedArtist.favorites.length >0 ? (
-                        selectedArtist && selectedArtist.favorites.map((fav, index) => (
-                            <h4 key={index}>Title: <span>{fav}</span></h4>
+                        selectedArtist && selectedArtist.favorites.map((favorites) => (
+                            <div >
+                            <h4 key={favorites.index}>Title:{favorites.title}</h4>
+                            <img className="gallery bordered small image" alt='' src={favorites.image}/>
+                            </div>
                         ))
                     ) : (
                         <h1> {selectedArtist.name} doesn't have any favorite pieces yet 😔</h1>
