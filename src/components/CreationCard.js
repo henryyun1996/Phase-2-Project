@@ -12,7 +12,7 @@ function Front({ creation }) {
 function Back({ creation }) {
     return (
         <div>
-            <h4>{creation.summary}</h4>
+            <h4 className='gallery bordered image'>{creation.summary}</h4>
         </div>
     )
 }
