@@ -36,6 +36,8 @@ function ArtistCollection( { currentUser }) {
     //     return <div>helloooo</div>
     // }
 
+    console.log(selectedArtist)
+
     return (
         <>
         <div className="ui menu">
@@ -57,7 +59,7 @@ function ArtistCollection( { currentUser }) {
                         selectedArtist && selectedArtist.favorites.map((fav, index) => (
                             <div key={index}>
                                 <h4>Title: <span>{fav.title}</span></h4>
-                                <img src={fav.image} alt={fav.title}/>
+                                <img src={fav.image} alt={fav.title} className="gallery bordered small image/>
                             </div>
                         ))
                     ) : (
