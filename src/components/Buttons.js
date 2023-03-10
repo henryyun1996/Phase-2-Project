@@ -10,9 +10,9 @@ function Buttons({ onChangePage }) {
     }
 
     return (
-        <div>
-            <button className= "ui fav button" onClick={handleArtistCollectionClick}>Find Friends</button>
-            <button className= "ui fav button" onClick={handleOwnWorkClick}>My Profile</button>
+        <div className="ui floated left">
+            <button className= "ui fav left floated button" onClick={handleArtistCollectionClick}>Find Friends</button>
+            <button className= "ui fav left floated button" onClick={handleOwnWorkClick}>My Profile</button>
         </div>
     );
 }

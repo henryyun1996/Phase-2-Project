@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory} from "react-router-dom";
-import { Button, Form, Grid, Segment } from 'semantic-ui-react'
+import { Button, Container, Form, Grid, Input, Segment } from 'semantic-ui-react'
+import banner from "../images/welcome.png"
 
 function NewAccount({ API, artists, setArtists, setUsername, setPassword }) {
     const [name, setName] = useState("");
@@ -8,6 +9,8 @@ function NewAccount({ API, artists, setArtists, setUsername, setPassword }) {
     const [newPassword, setNewPassword] = useState("");
     const [bio, setBio] = useState("");
     const history = useHistory();
+
+    console.log(name, newUsername,newPassword, bio )
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -45,48 +48,39 @@ function NewAccount({ API, artists, setArtists, setUsername, setPassword }) {
     }
 
     return (
-        <Segment placeholder>
-            <Grid relaxed='very' columns={1}>
-                <Grid.Column>
-                    <Form onSubmit={handleSubmit}>
-                        <h1>Sign-up!</h1>
-                            Name: <Form.Input 
-                                type="text"
-                                name="name"
-                                placeholder="Name"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                    <br/>
-                            Username: <input 
-                                type="text"
-                                name="username"
-                                placeholder="Username"
-                                value={newUsername}
-                                onChange={(e) => setNewUsername(e.target.value)}
-                            />
-                    <br/>
-                            Password: <input 
-                                type="password"
-                                name="password"
-                                placeholder="Password"
-                                value={newPassword}
-                                onChange={(e) => setNewPassword(e.target.value)}
-                            />
-                    <br/>
-                            Bio: <input 
-                                type="text"
-                                name="bio"
-                                placeholder="what's your art style?"
-                                value={bio}
-                                onChange={(e) => setBio(e.target.value)}
-                            />
-                    <br/>
-                    <Button>Sign-Up!</Button>
-                    </Form>
-                </Grid.Column>
-            </Grid>
+     <>
+     <img alt='' src={banner} className= "ui fluid image"/> 
+     <Segment secondary textAlign='center'className="">
+        <Form className='ui small form'onSubmit={handleSubmit}>
+        <Form.Field inline >
+            <label className=" ui center aligned"> &nbsp; &nbsp; &nbsp; &nbsp;Name </label>
+            <input placeholder="Name.." 
+            value={name}
+            onChange={(e) => setName(e.target.value)}/>
+        </Form.Field>
+        <Form.Field inline >
+            <label className=" ui center aligned">Username</label>
+            <input placeholder="Username.." 
+            value={newUsername}
+            onChange={(e) => setNewUsername(e.target.value)}/>
+        </Form.Field>
+        <Form.Field inline >
+            <label>Password</label>
+             <input type='password' 
+             value={newPassword}
+             placeholder="Password.." 
+            onChange={(e) => setNewPassword(e.target.value)}/>
+        </Form.Field>
+        <Form.Field inline>
+            <label>Favorite Style?</label>
+            <input placeholder="What's your art style?" 
+            value={bio}
+            onChange={(e) => setBio(e.target.value)}/>
+        </Form.Field>
+        <Button className="ui like button">Sign-Up!</Button>
+    </Form>
         </Segment>
+    </>
     )
 }
 
