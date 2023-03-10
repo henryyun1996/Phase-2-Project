@@ -7,31 +7,27 @@
       "password": "password",
       "bio": "about me etc etc",
       "favorites": [
-        "Summer Evening",
-        "Melancholy",
-        "Girl with a Pearl Earring",
-        "Circus Performers and Animals",
-        "The Lane of Poplars",
-        "Lucynder",
-        "Namida Series no. 0912"
-      ],
-      "following": []
+        {
+          "title": "Summer Evening",
+          "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq"
+        },
+        {
+          "title": "Melancholy",
+          "image": "https://www.edvardmunch.org/images/paintings/melancholy.jpg"
+        },
+        {
+          "title": "Cows on a Stream",
+          "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/fritsmondrian.jpg"
+        }
+      ]
     },
     {
       "id": 2,
       "name": "Gaby",
       "username": "gaby",
-      "password": "password",
+      "password": "1234",
       "bio": "about me etc etc",
-      "favorites": [
-        "Summer Evening",
-        "Melancholy",
-        "Girl with a Pearl Earring",
-        "Circus Performers and Animals",
-        "The Lane of Poplars",
-        "Lucynder"
-      ],
-      "following": []
+      "favorites": []
     },
     {
       "id": 3,
@@ -39,8 +35,7 @@
       "username": "vince",
       "password": "vince",
       "bio": "about me etc etc",
-      "favorites": [],
-      "following": []
+      "favorites": []
     },
     {
       "id": 4,
@@ -48,8 +43,7 @@
       "username": "leo",
       "password": "leo123",
       "bio": "about me etc etc",
-      "favorites": [],
-      "following": []
+      "favorites": []
     },
     {
       "name": "Joy",
@@ -57,7 +51,6 @@
       "password": "bori",
       "bio": "modern/ contemporary",
       "favorites": [],
-      "following": [],
       "id": 5
     }
   ],
@@ -261,8 +254,7 @@
       "artist": "Chakrabhand Posayakrit",
       "summary": "Crowning Touch is an oil on canvas painting created by Chakrabhand Posayakrit in 2003. The image is used according to educational fair use, and tagged beuty, crowns and women.",
       "likes": 24
-    }
-    ,
+    },
     {
       "id": 41,
       "title": "Market Maneuvers",
