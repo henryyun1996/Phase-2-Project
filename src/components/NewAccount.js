@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory} from "react-router-dom";
-import { Button, Container, Form, Grid, Input, Segment } from 'semantic-ui-react'
+import { Button, Form, Segment } from 'semantic-ui-react'
 import banner from "../images/welcome.png"
 
 function NewAccount({ API, artists, setArtists, setUsername, setPassword }) {

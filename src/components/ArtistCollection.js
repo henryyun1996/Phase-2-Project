@@ -56,10 +56,10 @@ function ArtistCollection( { currentUser }) {
                     <Sticky>
                     <h1>Favorites: </h1>
                     {selectedArtist && selectedArtist.favorites.length >0 ? (
-                        selectedArtist && selectedArtist.favorites.map((favorites) => (
-                            <div >
-                            <h4 key={favorites.index}>Title:{favorites.title}</h4>
-                            <img className="gallery bordered small image" alt='' src={favorites.image}/>
+                        selectedArtist && selectedArtist.favorites.map((fav, index) => (
+                            <div key={index}>
+                                <h4>Title: <span>{fav.title}</span></h4>
+                                <img src={fav.image} alt={fav.title} className="gallery bordered small image/>
                             </div>
                         ))
                     ) : (
