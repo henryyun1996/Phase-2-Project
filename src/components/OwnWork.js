@@ -37,8 +37,8 @@ function OwnWork({ currentUser }) {
     <br/>
     <Segment>
     <Grid columns={3} relaxed='very'>
-      <Grid.Row style={{ textAlign: 'left' }}>
-       <h2 >My Favorites:</h2>
+       <h2>My Favorites:</h2>
+      <Grid.Row style={{ textAlign: 'center' }}>
             {userFavoritesList.length > 0 ? (
               listFavorites
             ) : (
