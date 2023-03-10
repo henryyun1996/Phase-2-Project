@@ -138,3 +138,12 @@ ul {
 .lightBrown{
   color: #a37148 !important;
 }
+
+.gallery.bordered.summary {
+  border: 5px;
+  border-style: solid;
+  border-color: white; 
+  padding: 7px ;
+  margin: 5px ;
+  max-width: 84%
+}

@@ -1,24 +1,25 @@
 import { useState } from "react";
-import { Button } from "semantic-ui-react";
+import { Button, Reveal } from "semantic-ui-react";
 
-function Front({ creation }) {
-    return (
-        <div>
-            <img src={creation.image} alt={creation.title} className='gallery bordered image' />
-        </div>
-    )
-}
+// function Front({ creation }) {
+//     return (
+//         <div>
+//             <img src={creation.image} alt={creation.title} className='gallery bordered image' />
+//         </div>
+//     )
+// }
 
-function Back({ creation }) {
-    return (
-        <div>
-            <h4 className='gallery bordered image'>{creation.summary}</h4>
-        </div>
-    )
-}
+// function Back({ creation }) {
+//     return (
+//         <div>
+//             <h4 className='gallery bordered image'>{creation.summary}</h4>
+//         </div>
+//     )
+// }
+
 
 function CreationCard({ creation, updateLikes, artists, setArtists, currentUser }) {
-    const [showFront, setShowFront] = useState( true );
+    // const [showFront, setShowFront] = useState( true );
     const [favorited, setFavorited] = useState(false);
     const [liked, setLiked] = useState(true)
 
@@ -53,9 +54,9 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
         .then(updateLikes(creation))
         toggleLiked() 
     }
-    function toggleCard() {
-        setShowFront(showFront => !showFront)
-    }
+    // function toggleCard() {
+    //     setShowFront(showFront => !showFront)
+    // }
 
     function toggleLiked() {
         setLiked(liked => !liked)
@@ -102,11 +103,28 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
 
     return (
     <div className="ui five wide column image">
-        <div onClick={ toggleCard }>
+        {/* <div onClick={ toggleCard }>
             {showFront ? <Front creation={creation} /> : <Back creation={creation} />}
-        </div>
-        <h4>Title: {creation.title}</h4>
-        <h4>Artist: {creation.artist}</h4>
+        </div> */}
+        <Reveal animated='move'>
+            <Reveal.Content visible>
+            <div>
+            <img src={creation.image} alt={creation.title} className='gallery bordered image' />
+            </div>
+            <h4>Title: {creation.title}
+            <br/>
+            Artist: {creation.artist}</h4>
+            <br/>
+            </Reveal.Content>
+        <Reveal.Content hidden>
+            <div className="ui container center aligned">
+            <p className=' gallery bordered summary'>{creation.summary}</p>
+            </div>
+        </Reveal.Content>
+        </Reveal>
+
+        {/* <h4>Title: {creation.title}</h4>
+        <h4>Artist: {creation.artist}</h4> */}
     {liked ? <Button 
         className="ui like button"
         size='tiny'
@@ -135,7 +153,7 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
         content='Add to Favorites'
         icon='favorite'
         onClick={handleFavorites}
-    />}
+    />} 
     </div>
 
     )

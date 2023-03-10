@@ -71,6 +71,14 @@
         {
           "title": "The Double",
           "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/jared-french.jpg"
+        },
+        {
+          "title": "Lady Lilith",
+          "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/337500/787246/main-image"
+        },
+        {
+          "title": "Lady Lilith",
+          "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/337500/787246/main-image"
         }
       ]
     },
@@ -270,7 +278,7 @@
       "title": "The Lane of Poplars",
       "image": "https://www.alfredsisley.org/thumbnail/152000/152478/mini_large/The-Lane-Of-Poplars-At-Moret-Sur-Loing.jpg?ts=1459229076",
       "artist": "Alfred Sisley",
-      "summary": "Many consider this piece an interesting play between positive and negative space. The positive space being the trees and the negative space being the sky, clouds, and houses in the background. The woman resting along the stream almost blends in with the rest of nature and it utilizes a calm and low-contrast color scheme favored by many Impressionists. Interestingly, this painting was stolen 3 times - most recently from the Musée des Beaux-Arts in 2007.",
+      "summary": "Many consider this piece an interesting play between positive and negative space. The positive space being the trees and the negative space being the sky, clouds, and houses in the background. The woman resting along the stream almost blends in with the rest of nature and it utilizes a calm and low-contrast color scheme favored by many Impressionists.",
       "likes": 46
     },
     {
@@ -302,7 +310,7 @@
       "title": "The Dance Class",
       "image": "https://thetourguy.com/wp-content/uploads/2020/03/DT46-947x1024-1-630x350.jpg",
       "artist": "Edgar Degas",
-      "summary": "This work represents the one of the most ambitious paintings Degas devoted to the theme of dance. Around twenty-four women, ballerinas and their mothers, wait while a dancer executes an 'attitude' for her examination. Famous ballet master, Jules Perror, makes a cameo as a the instructor of the class.",
+      "summary": "This work represents the one of the most ambitious paintings Degas devoted to the theme of dance. Around 24 women, wait while a dancer executes an 'attitude' for her examination. Famous ballet master, Jules Perror, makes a cameo as a the instructor of the class.",
       "likes": 39
     },
     {
@@ -390,7 +398,7 @@
       "title": "Sky Above Clouds IV",
       "image": "https://www.artic.edu/iiif/2/8fa4d1dd-b05f-eb8d-b83f-7b5dd65642db/full/843,/0/default.jpg",
       "artist": "Georgia O'Keefe",
-      "summary": "Painted in the summer of 1965, when Georgia O'Keeffe was 77 years old, this monumental work culminates a series inspired by the artist's experiences as an airplane passenger during the 1950s.",
+      "summary": "Painted in the summer of 1965, this monumental work culminates a series inspired by O'keefe's experiences as an airplane passenger during the 1950s.",
       "likes": 66
     },
     {
@@ -558,7 +566,7 @@
       "title": "A Bigger Interior with Blue Terrace",
       "image": "https://www.arthistoryproject.com/site/assets/files/32384/david_hockney-a_bigger_interior_with_blue_terrace_and_garden-2017-obelisk-art-history.1600x0.webp",
       "artist": "David Hockney",
-      "summary": "A Bigger Interior with Blue Terrace and Garden is a Pop Art acrylic painting created by David Hockney in 2017. It lives in a private collection. The image is David Hockney, and used according to educational fair use, and tagged gardens, perspective and shaped canvas.",
+      "summary": "A Bigger Interior with Blue Terrace and Garden is a Pop Art acrylic painting created by David Hockney in 2017. It lives in a private collection. The image is David Hockney, and tagged gardens, perspective and shaped canvas.",
       "likes": 34
     },
     {
