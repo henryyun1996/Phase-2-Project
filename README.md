@@ -35,7 +35,7 @@ Once you have gained access - you are given your own accessible page where you c
                 ├── ArtCard.js
             └── HomePage.js
                 ├── Buttons.js
-                ├── CreationCard.js
+                └── CreationCard.js
             
         
 
