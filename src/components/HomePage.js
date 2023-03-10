@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
-import { Sticky } from "semantic-ui-react";
+// import { Sticky } from "semantic-ui-react";
 import Buttons from "./Buttons";
 import CreationCard from "./CreationCard";
 

@@ -5,7 +5,7 @@
       "name": "Henry",
       "username": "henry",
       "password": "password",
-      "bio": "about me etc etc",
+      "bio": "Landscape paintings - specifically forests/ trees!",
       "favorites": [
         {
           "title": "Summer Evening",
@@ -18,6 +18,22 @@
         {
           "title": "Cows on a Stream",
           "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/fritsmondrian.jpg"
+        },
+        {
+          "title": "Namida Series no. 0912",
+          "image": "https://d1ee3oaj5b5ueh.cloudfront.net/thumbs/680xAUTO_original_article_2021_03_605e0232a2e04.jpeg"
+        },
+        {
+          "title": "348 West 22nd Street, Apartment A, Unit-2, Corridor and Staircase",
+          "image": "https://cdn.thespaces.com/wp-content/uploads/2019/11/348-West-22nd-Street-by-DO-Ho-Suh-EX8708-VW018-hpr-1024x683.jpg"
+        },
+        {
+          "title": "Overworked Woman",
+          "image": "https://www.arthistoryproject.com/site/assets/files/26943/bodo-overworked_woman-2005-trivium-art-history.webp"
+        },
+        {
+          "title": "Ada Ada",
+          "image": "https://www.arthistoryproject.com/site/assets/files/26200/alex-katz-ada-ada-2014-trivium-art-history.1600x0.webp"
         }
       ]
     },
@@ -27,7 +43,24 @@
       "username": "gaby",
       "password": "1234",
       "bio": "about me etc etc",
-      "favorites": []
+      "favorites": [
+        {
+          "title": "Stonebreakers",
+          "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/53925_1484888367089_1380281183_31296443_2930737_o.jpg"
+        },
+        {
+          "title": "Circus Performers and Animals",
+          "image": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2011/05/margaret-hoening-french.jpg"
+        },
+        {
+          "title": "The Lane of Poplars",
+          "image": "https://www.alfredsisley.org/thumbnail/152000/152478/mini_large/The-Lane-Of-Poplars-At-Moret-Sur-Loing.jpg?ts=1459229076"
+        },
+        {
+          "title": "Julie Le Brun Looking in a Mirror",
+          "image": "https://thetourguy.com/wp-content/uploads/2020/03/Julie-Le-Brun-by-Elisabeth-Louise-Vige%CC%81e-Le-Brun.jpeg"
+        }
+      ]
     },
     {
       "id": 3,

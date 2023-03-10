@@ -55,7 +55,10 @@ function ArtistCollection( { currentUser }) {
                     <h1>Favorites: </h1>
                     {selectedArtist && selectedArtist.favorites.length >0 ? (
                         selectedArtist && selectedArtist.favorites.map((fav, index) => (
-                            <h4 key={index}>Title: <span>{fav}</span></h4>
+                            <div key={index}>
+                                <h4>Title: <span>{fav.title}</span></h4>
+                                <img src={fav.image} alt={fav.title}/>
+                            </div>
                         ))
                     ) : (
                         <h1> {selectedArtist.name} doesn't have any favorite pieces yet 😔</h1>

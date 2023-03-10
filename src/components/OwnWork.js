@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Divider, Grid, Segment } from "semantic-ui-react";
+import { Grid, Segment } from "semantic-ui-react";
 
 function OwnWork({ currentUser }) {
   const [favorited, setFavorited] = useState({ favorites: [{ title: "", image: ""}] });
@@ -10,18 +10,18 @@ function OwnWork({ currentUser }) {
     .then(res => res.json())
     .then(favoritedInfo => setFavorited(favoritedInfo))
     .catch(error => console.log('Error fetching favorites:', error))
-  }, [])
+  })
 
   const userFavoritesList = favorited.favorites
   
   const listFavorites = userFavoritesList.map((favorite) => {
     return (
-      <div key={favorite}>
-        <div className="center aligned content">
-          <span className="ui header">Title: {favorite.title}</span>
-          <img src={favorite.image}/>
-        </div>
-      </div>
+        <Grid.Column key={favorite.title}>
+          <h4>Title: {favorite.title}</h4>
+          <div>
+            <img alt={favorite.title} src={favorite.image} className='gallery bordered image'/>
+          </div>
+        </Grid.Column>
     )
   })
     
@@ -36,15 +36,15 @@ function OwnWork({ currentUser }) {
     <h1 className="ui block header">{currentUser.name}'s Profile</h1>
     <br/>
     <Segment>
-    <Grid columns={1} relaxed='very'>
-      <Grid.Column style={{ textAlign: 'left' }}>
+    <Grid columns={3} relaxed='very'>
+      <Grid.Row style={{ textAlign: 'left' }}>
        <h2 >My Favorites:</h2>
             {userFavoritesList.length > 0 ? (
               listFavorites
             ) : (
               <p>No favorites found.</p>
             )}
-      </Grid.Column>
+      </Grid.Row>
       </Grid>
       </Segment>
     </div>

@@ -124,16 +124,17 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
         label={{ basic: true, color: 'red', pointing: 'left', content: creation.likes  }}
     />}
     {favorited ? <Button 
-    size='tiny'
-    className="ui button"
-    content='Added to Favorites'
-    icon='check'
-    onClick={handleFavorites}/>: <Button 
-    size='tiny'
-    className="ui fav button"
-    content='Add to Favorites'
-    icon='favorite'
-    onClick={handleFavorites}
+        size='tiny'
+        className="ui button"
+        content='Added to Favorites'
+        icon='check'
+        onClick={handleFavorites}
+    />: <Button 
+        size='tiny'
+        className="ui fav button"
+        content='Add to Favorites'
+        icon='favorite'
+        onClick={handleFavorites}
     />}
     </div>
 
