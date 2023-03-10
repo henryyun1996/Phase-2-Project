@@ -32,10 +32,6 @@ function ArtistCollection( { currentUser }) {
        )
     })
 
-    // function showFavs() {
-    //     return <div>helloooo</div>
-    // }
-
     console.log(selectedArtist)
 
     return (
@@ -46,15 +42,14 @@ function ArtistCollection( { currentUser }) {
         <Link to= "/" className="item">Log Out</Link>
         </div>
         <div>
-        <h1 className="ui block header">Find Friends with Similar Art Taste</h1>
+        <h1 className="ui block header lightBrown ">Find Friends with Similar Art Taste</h1>
         </div>
         <br/>
         <div >
             <Grid columns={16} relaxed='very'>
-                <Grid.Column scrolling width={5}>{artistCards}</Grid.Column>
-                <Grid.Column width={10} style={{ border: '1px solid black', borderRadius: '10px' }}>
-                    <Sticky>
-                    <h1>Favorites: </h1>
+                <Grid.Column width={5}>{artistCards}</Grid.Column>
+                <Grid.Column width={10} className='ui card'>
+                    <h1 className="ui left floated header maroon">Favorites: </h1>
                     {selectedArtist && selectedArtist.favorites.length >0 ? (
                         selectedArtist && selectedArtist.favorites.map((fav, index) => (
                             <div key={index}>
@@ -63,9 +58,8 @@ function ArtistCollection( { currentUser }) {
                             </div>
                         ))
                     ) : (
-                        <h1> {selectedArtist.name} doesn't have any favorite pieces yet 😔</h1>
+                        <h1 className="ui left floated header"> {selectedArtist.name} doesn't have any favorite pieces yet 😔</h1>
                     )}
-                    </Sticky>
                 </Grid.Column>
             </Grid>
         </div>

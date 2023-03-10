@@ -34,7 +34,7 @@ function HomePage({ currentUser, artists, setArtists }) {
   }
 
   function handleSearch(searchText) {
-    const searchGallery = galleryData.filter((creation) => creation.title.toLowerCase().includes(searchText.toLowerCase())
+    const searchGallery = galleryData.filter((creation) => creation.title.toLowerCase().includes(searchText.toLowerCase()) || creation.artist.toLowerCase().includes(searchText.toLowerCase())
     );
     setFilteredGalleryData(searchGallery);
   }
@@ -59,10 +59,10 @@ function HomePage({ currentUser, artists, setArtists }) {
         </Link>
       </div>
         <div>
-        <h1 className="ui left aligned header">{currentUser ? `Hello ${currentUser && currentUser.name}!` : "Welcome!"}</h1>
+        <h1 className="ui left aligned header maroon">{currentUser ? `Hello ${currentUser && currentUser.name}!` : "Welcome!"}</h1>
         <Buttons onChangePage={handleChangePage}/>
         <br/>
-        <div className="ui dividing header">
+        <div className="ui dividing header maroon">
           <h1>Gallery
           <div className="sub header">Click on an art piece to learn more about it</div>
           </h1>
