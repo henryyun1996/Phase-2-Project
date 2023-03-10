@@ -64,7 +64,7 @@ function HomePage({ currentUser, artists, setArtists }) {
         <br/>
         <div className="ui dividing header maroon">
           <h1>Gallery
-          <div className="sub header">Click on an art piece to learn more about it</div>
+          <div className="sub header">Hover over an art piece to learn more about it</div>
           </h1>
           <br/>
       </div>
