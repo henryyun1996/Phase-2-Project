@@ -79,7 +79,7 @@
       "name": "Vince",
       "username": "vince",
       "password": "vince",
-      "bio": "about me etc etc",
+      "bio": "anything self portraits",
       "favorites": []
     },
     {
@@ -124,6 +124,64 @@
       "favorites": [],
       "following": [],
       "id": 8
+    },
+    {
+      "name": "Bad Bunny",
+      "username": "therealbadbunny",
+      "password": "carrots",
+      "bio": "Latin",
+      "favorites": [
+        {
+          "title": "Madonna",
+          "image": "https://cdn.thecollector.com/wp-content/uploads/2020/10/edvard-munch-madonna-1894-95-e1603213735923.jpg?width=1400&quality=55"
+        },
+        {
+          "title": "The Lane of Poplars",
+          "image": "https://www.alfredsisley.org/thumbnail/152000/152478/mini_large/The-Lane-Of-Poplars-At-Moret-Sur-Loing.jpg?ts=1459229076"
+        },
+        {
+          "title": "Lucynder",
+          "image": "http://munchable.com/wp-content/uploads/2021/01/Mona-Lisa-Nigerian-Model.jpg"
+        },
+        {
+          "title": "Crying Girl",
+          "image": "https://www.guyhepner.com/wp-content/uploads/2015/11/Crying-Girl-.png"
+        },
+        {
+          "title": "Girl (Self-portrait)",
+          "image": "https://www.arthistoryproject.com/site/assets/files/32235/gwendolyn_knight-girl_self-portrait_-2004-trivium-art-history.1200x0.webp"
+        },
+        {
+          "title": "Ada Ada",
+          "image": "https://www.arthistoryproject.com/site/assets/files/26200/alex-katz-ada-ada-2014-trivium-art-history.1600x0.webp"
+        },
+        {
+          "title": "99 cent",
+          "image": "https://d2jv9003bew7ag.cloudfront.net/uploads/Andreas-Gursky-99-Cents-1999-Image-via-crafthubscom.jpg"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "Pauline Chalamet",
+      "username": "kimberlyfinkle",
+      "password": "mindykaling",
+      "bio": "art history",
+      "favorites": [
+        {
+          "title": "Summer Evening",
+          "image": "https://qph.cf2.quoracdn.net/main-qimg-686b97baa69950c3e0ec32b63151c54f-lq"
+        },
+        {
+          "title": "Overworked Woman",
+          "image": "https://www.arthistoryproject.com/site/assets/files/26943/bodo-overworked_woman-2005-trivium-art-history.webp"
+        },
+        {
+          "title": "A Bigger Interior with Blue Terrace",
+          "image": "https://www.arthistoryproject.com/site/assets/files/32384/david_hockney-a_bigger_interior_with_blue_terrace_and_garden-2017-obelisk-art-history.1600x0.webp"
+        }
+      ],
+      "id": 10
     }
   ],
   "artwork": [
@@ -289,11 +347,11 @@
     },
     {
       "id": 21,
-      "title": "Birth of Venus",
-      "image": "http://www.italianrenaissance.org/wp-content/uploads/2012/08/Botticelli-Birth-of-Venus-590x370.jpg",
-      "artist": "Sandro Botticelli",
-      "summary": "In the painting we see here, Venus is prominently depicted in the center, born out of the foam as she rides to shore.  On the left, the figure of Zephyrus carries the nymph Chloris (alternatively identified as “Aura”) as he blows the wind to guide Venus",
-      "likes": 99
+      "title": "Cows Skull with Calico Rose",
+      "image": "https://www.artic.edu/iiif/2/2d695bad-1205-6185-c3aa-3fd42210dbf9/full/843,/0/default.jpg",
+      "artist": "Georgia O'Keefe",
+      "summary": "Georgia O'Keeffe collected this cow's skull in New Mexico during the summer of 1930, when a drought had devasted the Southwest, and many animal skeletons could be found in the desert.",
+      "likes": 66
     },
     {
       "id": 22,
@@ -337,11 +395,11 @@
     },
     {
       "id": 27,
-      "title": "Cows Skull with Calico Rose",
-      "image": "https://www.artic.edu/iiif/2/2d695bad-1205-6185-c3aa-3fd42210dbf9/full/843,/0/default.jpg",
-      "artist": "Georgia O'Keefe",
-      "summary": "Georgia O'Keeffe collected this cow's skull in New Mexico during the summer of 1930, when a drought had devasted the Southwest, and many animal skeletons could be found in the desert.",
-      "likes": 66
+      "title": "Birth of Venus",
+      "image": "http://www.italianrenaissance.org/wp-content/uploads/2012/08/Botticelli-Birth-of-Venus-590x370.jpg",
+      "artist": "Sandro Botticelli",
+      "summary": "In the painting we see here, Venus is prominently depicted in the center, born out of the foam as she rides to shore.  On the left, the figure of Zephyrus carries the nymph Chloris (alternatively identified as “Aura”) as he blows the wind to guide Venus",
+      "likes": 99
     },
     {
       "id": 28,
@@ -385,19 +443,19 @@
     },
     {
       "id": 33,
-      "title": "A Sunday Afternoon on the Island",
-      "image": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/1686,/0/default.jpg",
-      "artist": "Georges Seurat",
-      "summary": "In his best-known and largest painting, Georges Seurat depicted people from different social classes strolling and relaxing in a park just west of Paris on La Grande Jatte, an island in the Seine River.",
-      "likes": 15
+      "title": "Gifts of August",
+      "image": "https://www.arthistoryproject.com/site/assets/files/32182/durdy_bayramov-gifts_of_august-2004-trivium-art-history.webp",
+      "artist": "Durdy Bayramov",
+      "summary": "Gifts of August is a Realist oil on canvas painting created by Durdy Bayramov in 2004. It lives at the Durdy Bayramov Art Foundation in Canada. The image is Durdy Bayramov Estate, and used according to educational fair use, and tagged still life, fruit and pattern.",
+      "likes": 35
     },
     {
       "id": 34,
-      "title": "Proserpine",
-      "image": "https://media.tate.org.uk/art/images/work/N/N05/N05064_9.jpg",
-      "artist": "Dante Gabriel Rossetti",
-      "summary": "The figure represents Proserpine as Empress of Hades. After she was conveyed by Pluto to his realm, and became his bride, her mother Ceres importuned Jupiter for her return to earth, and he was prevailed on to consent to this, provided only she had not partaken of any of the fruits of Hades.",
-      "likes": 35
+      "title": "Girl (Self-portrait)",
+      "image": "https://www.arthistoryproject.com/site/assets/files/32235/gwendolyn_knight-girl_self-portrait_-2004-trivium-art-history.1200x0.webp",
+      "artist": "Gwendolyn Knight",
+      "summary": "Girl (Self-portrait) is a screenprint print created by Gwendolyn Knight in 2004. The image is used according to educational fair use, and tagged self-portraits.",
+      "likes": 6
     },
     {
       "id": 35,
@@ -457,19 +515,19 @@
     },
     {
       "id": 42,
-      "title": "Gifts of August",
-      "image": "https://www.arthistoryproject.com/site/assets/files/32182/durdy_bayramov-gifts_of_august-2004-trivium-art-history.webp",
-      "artist": "Durdy Bayramov",
-      "summary": "Gifts of August is a Realist oil on canvas painting created by Durdy Bayramov in 2004. It lives at the Durdy Bayramov Art Foundation in Canada. The image is Durdy Bayramov Estate, and used according to educational fair use, and tagged still life, fruit and pattern.",
-      "likes": 35
+      "title": "A Sunday Afternoon on the Island",
+      "image": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/1686,/0/default.jpg",
+      "artist": "Georges Seurat",
+      "summary": "In his best-known and largest painting, Georges Seurat depicted people from different social classes strolling and relaxing in a park just west of Paris on La Grande Jatte, an island in the Seine River.",
+      "likes": 15
     },
     {
       "id": 43,
-      "title": "Girl (Self-portrait)",
-      "image": "https://www.arthistoryproject.com/site/assets/files/32235/gwendolyn_knight-girl_self-portrait_-2004-trivium-art-history.1200x0.webp",
-      "artist": "Gwendolyn Knight",
-      "summary": "Girl (Self-portrait) is a screenprint print created by Gwendolyn Knight in 2004. The image is used according to educational fair use, and tagged self-portraits.",
-      "likes": 6
+      "title": "Proserpine",
+      "image": "https://media.tate.org.uk/art/images/work/N/N05/N05064_9.jpg",
+      "artist": "Dante Gabriel Rossetti",
+      "summary": "The figure represents Proserpine as Empress of Hades. After she was conveyed by Pluto to his realm, and became his bride, her mother Ceres importuned Jupiter for her return to earth, and he was prevailed on to consent to this, provided only she had not partaken of any of the fruits of Hades.",
+      "likes": 35
     },
     {
       "id": 44,
