@@ -82,3 +82,7 @@ function NewAccount({ API, artists, setArtists, setUsername, setPassword }) {
 }
 
 export default NewAccount;
+
+// responsible for controlling new account form
+// POST request that renders new object in "artists" array in db.json
+// after signing up - will automatically send you back to the LogIn component

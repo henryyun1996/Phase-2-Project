@@ -84,3 +84,8 @@ function HomePage({ currentUser, artists, setArtists }) {
 }
 
 export default HomePage;
+
+// in charge of rendering and all functionality of the Home Page (page right after log in)
+// will display with name at the top of the user who is currently logged in
+// filter function is here - can filter by art title or artist name
+// useHistory hook is used here because this is the page that can enter new URLs/ users will often come back to this page - useHistory keeps track of this movement between URLs

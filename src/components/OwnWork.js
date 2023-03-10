@@ -53,3 +53,6 @@ function OwnWork({ currentUser }) {
 }
 
 export default OwnWork;
+
+// makes a GET request from the db.json of the current user for the nested "favorites" array inside the "artists" array of the db.json
+// using this information will render the image and title from that "favorites" array

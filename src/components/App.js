@@ -57,15 +57,11 @@ function App() {
       <Route exact path="/artist-collection">
         <ArtistCollection 
           currentUser={currentUser} 
-          artists={artists}
-          setArtists={setArtists}
         />
       </Route>
       <Route exact path="/creations">
         <OwnWork 
-          currentUser={currentUser}
-          artists={artists}
-          setArtists={setArtists} 
+          currentUser={currentUser} 
       />
       </Route>
       <Route path="*">
@@ -78,3 +74,6 @@ function App() {
 }
 
 export default App;
+
+// responsible for holding and passing down "artist" array from db.json down to multiple components
+// also responsible for providing pathways for the different URLs using Switch

@@ -36,3 +36,5 @@ function ArtistCard({ artist, showFavs }) {
 }
 
 export default ArtistCard
+
+// simply renders the artist card information within the ArtistCollection component

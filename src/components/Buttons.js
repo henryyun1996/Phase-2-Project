@@ -18,3 +18,5 @@ function Buttons({ onChangePage }) {
 }
 
 export default Buttons;
+
+// in charge of the user navigating to two different components: ArtistCollection & OwnWork

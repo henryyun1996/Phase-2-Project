@@ -81,3 +81,8 @@ function LogIn({ setCurrentUser, artists, username, setUsername, password, setPa
 }
 
 export default LogIn;
+
+// responsible for rendering the first page when coming onto the site
+// also has a controlled form that is in charge of the log in form
+// verifies that login information is consistent to the username and password from the db.json
+// updates currentUser state in App component that will be used in other components to track which user is currently logged in

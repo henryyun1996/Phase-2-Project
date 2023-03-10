@@ -1,6 +1,6 @@
 import {React, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
-import { Grid, Sticky } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import ArtistCard from "./ArtistCard";
 
 
@@ -68,3 +68,6 @@ function ArtistCollection( { currentUser }) {
 }
 
 export default ArtistCollection;
+
+// dynamically renders the the title and image for the chosen artists from the db.json
+// in charge of keeping track which artist object is being chosen to render chosen artist's favorites

@@ -142,3 +142,7 @@ function CreationCard({ creation, updateLikes, artists, setArtists, currentUser 
 }
 
 export default CreationCard;
+
+// toggle front and back of artist card in HomePage component
+// PATCH request for likes and unlike (can only upvote - no down voting)
+// updates current user (designated artist from "artists" array) favorites in db.json using a PATCH request
